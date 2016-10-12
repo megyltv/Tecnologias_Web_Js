@@ -91,3 +91,11 @@ O el caracter `_`
 ___
 
 > Otro quote 
+
+## Videos de youtube
+
+Es uso puro de HTML dentro de markdown:
+
+<a href="https://www.youtube.com/watch?v=VsibqXd-rW0
+" target="_blank"><img src="http://javascript.tutorialhorizon.com/files/2015/07/javascript.png" 
+alt="Video" width="240" height="180" border="10" /></a>
