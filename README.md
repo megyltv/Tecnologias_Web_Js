@@ -12,10 +12,9 @@ Este repositorio forma parte del [curso de tecnologías web](https://github.com/
 
 1. El número
 2. De las listas
-..* Lista no ordenada 1
-..* Lista no ordenada 2
+  * Lista no ordenada 1 (dos espacios antes del asterisco).
+  * Lista no ordenada 2.
 1. Ordenadas
+  1. Estas si es una lista ordenada (con dos espacios " " antes de los números).
+  2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números).
 4. No importa
-
-# Tecnologias_Web_Js
-Curso de Tecnologias web con Javascript
