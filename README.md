@@ -28,10 +28,18 @@ Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brac
 
 ## Formateo de Codigo
 
-Para nosotros utilizar el formateo de ódigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
+Para nosotros utilizar el formateo de código dentro de texto plano debemos de utilizar el caracter `Tilde invertida`.
 
-Para utilizar el formateo de codigo en un bloque de código necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programación a usarse para el formateo del código , justo después de las 3 `Tildes invertidas`.
+Para utilizar el formateo de código dentro de un bloque de texto plano necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programación a usarse para el formateo del código , justo después de las 3 `Tildes invertidas`.
+
+* Bloque de código en javacript
 
 ```javascript
 var mensaje = "Hola mundo";
+```
+ * Bloque de código de una `consola`
+
+```
+> apt-get update paquete
+>
 ```
