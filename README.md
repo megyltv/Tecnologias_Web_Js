@@ -64,7 +64,14 @@ Valor 2 C1 | Valor 2 C2 | Valor 2 C3 | Valor 2 C4
 Valor 3 C1 | Valor 3 C2 | Valor 3 C3 | Valor 3 C4
 Valor 4 C1 | Valor 4 C2 | Valor 4 C3 | Valor 4 C4
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+## Citas (no de humanos sino de texto)
+
+Para escribir varias líneas de citas solamentes las concatenamos en la siguiente línea utilizando mayor que ">":
+
+> Yo solo se, que nada se. NO OLVIDARSE EL SALTO DE LÍNEA.
+
+> Un filósofo random.
+
+Sino utilizados una cita en una línea con mayor que `>`: 
+
+> Y si me matas, ¿Me muero?
