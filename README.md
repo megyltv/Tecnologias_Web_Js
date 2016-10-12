@@ -18,3 +18,10 @@ Este repositorio forma parte del [curso de tecnologías web](https://github.com/
   1. Estas si es una lista ordenada (con dos espacios " " antes de los números).
   2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números).
 4. No importa
+
+## Links
+Para utilizar un [Link](https://github.com/megyltv/Tecnologias_Web_Js) debemos encerrar el texto en [] seguido del URL en ().
+
+## Imagenes
+
+Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brackets [] despues del caracter de exclamación ! y el link de la imagen emtre paréntesis() ![Imagen de JS en color amarillo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png "Javascript")
