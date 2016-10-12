@@ -25,6 +25,7 @@ Para utilizar un [Link](https://github.com/megyltv/Tecnologias_Web_Js) debemos e
 ## Imagenes
 
 Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brackets [] despues del caracter de exclamación ! y el link de la imagen entre paréntesis() 
+
 ![Imagen de JS en color amarillo](http://javascript.tutorialhorizon.com/files/2015/07/javascript.png "Javascript")
 
 ## Formateo de Codigo
@@ -62,3 +63,8 @@ Valor 1 C1 | Valor 1 C2 | Valor 1 C3 | Valor 1 C4
 Valor 2 C1 | Valor 2 C2 | Valor 2 C3 | Valor 2 C4
 Valor 3 C1 | Valor 3 C2 | Valor 3 C3 | Valor 3 C4
 Valor 4 C1 | Valor 4 C2 | Valor 4 C3 | Valor 4 C4
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
