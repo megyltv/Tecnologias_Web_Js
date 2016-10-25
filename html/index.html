@@ -25,7 +25,12 @@
         p{
             background-color: #d060ff;
         }
+        cualquiera{
+            background-color: cadetblue;
+        }
+        
         /*
+        POR CLASE
         .nombreClase{
         
         }
@@ -36,8 +41,14 @@
         }
         .nombreClaseAzul{
             background-color: darkblue;
-        }.nombreClaseAmarillo{
+        }
+        .nombreClaseAmarillo{
             background-color: yellow;
+        }
+        
+        /*POR ID*/
+        #parrafoverde{
+            background-color: crimson;
         }
         
     </style>
@@ -45,13 +56,16 @@
 </head>
 
 <body>
-    <h>Hola</h>
+    <h1>Hola</h1>
     <p class="nombreClaseRojo">Parrafo</p>
-    <h1>Amigos</h1>
+    <h1 class="nombreClaseAmarillo">Amigos</h1>
     <p class="nombreClaseAzul">Parrafo2</p>
     <h1>Politecnicos</h1>
-    <p class="nombreClaseAmarillo">Parrafo3</p>
-    <p>Ultimo parrafo</p>
+    <p id="parrafoverde" class="nombreClaseAmarillo">Parrafo Amarillo</p>
+    <p>ULTIMO PARRAFO SIN CLASES</p>
+    
+    
+    <cualquiera>Hola</cualquiera>
 </body>
 
 </html>
