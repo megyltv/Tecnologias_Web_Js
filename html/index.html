@@ -32,41 +32,92 @@
    
    <h2>Mi ejemplo de codigo</h2>
    <p>El tag para describir imagenes es: 
-   <code>&lt;img;&gt;</code>
+   <code>&lt;img&gt;</code>
    </p>
    
    <h2>User inputs con bootstrap</h2>
-   <p>No esta permirido por ejemplo el <kbd>
-       <kbd>ctrl</kbd>+ <kbd>c</kbd>
+   <p>No esta permitido por ejemplo el 
+        <kbd>
+           <kbd>ctrl</kbd>+ <kbd>c</kbd>
+        </kbd>
+        ni el 
+       <kbd>
+           <kbd>ctrl</kbd>+ <kbd>v</kbd>
+       </kbd>
+       
    </kbd>
    </p>
    
    <h2>Tablas</h2>
-   
-   <table class="table-striped">
+<!--table-hover   -->
+   <table class="table table-striped table-bordered">
 <!--       TABLE ROW-->
-        <tr> 
+        <tr > 
 <!--           TABLE HEADER-->
             <th>Company</th>
             <th>Contact </th>
             <th>Country</th>
         </tr>
             
-        <tr> 
+        <tr class="danger"> 
 <!--           TABLE ROW-->
             <td>Alfreds</td>
             <td>Anders</td>
             <td>Germany</td>
         </tr>
         
-         <tr> 
+         <tr class="info"> 
+            <td>Alfreds</td>
+            <td>Anders</td>
+            <td>Mexico</td>
+        </tr> 
+        <tr class="success"> 
+<!--           TABLE ROW-->
+            <td>Alfreds</td>
+            <td>Anders</td>
+            <td>Germany</td>
+        </tr>
+        
+         <tr class="warning"> 
             <td>Alfreds</td>
             <td>Anders</td>
             <td>Mexico</td>
         </tr> 
 
-
    </table>
+   
+<!--    table>tr>th*3-->
+<!--  .row>.col-sm3+.col-sm6+.col-sm3-->
+ <div class="container">
+     <div class="row">
+     <div class="col-sm-3"></div>
+         <div class="col-sm-6">
+         <form>
+         <div class="form-group">
+         <label for="exampleInputEmail1">Email address</label>
+         <div class="input-group">
+             <div class="input-group-addon">
+                 yo
+             </div>
+             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+             <div class="input-group-addon">
+                 aq
+             </div>
+         </div>
+         
+        
+        
+        
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+      </div>
+      <div class="col-sm-3"></div>
+  </div>
+
+ </div>
+  
    
    
     <h1>Hola</h1>
