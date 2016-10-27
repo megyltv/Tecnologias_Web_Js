@@ -112,7 +112,7 @@ Un Framework ofrece componentes como una libreria, pero asi mismo provee plantil
 Estilos definidos dentro del archivo html.
 - En ```<head>``` se ubica las etiquetas ```<style>```.
     <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/informes/Informe1/imagenes/cap1.jpg?raw=true" width="300" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap1.jpg?raw=true" width="300" height="">
     </p>
 
 - **Por etiqueta.-** Se especifica el nombre del elemento o etiqueta de html. Adentro se indica que el atributo de color de fondo (background-color) de la etiqueta ```<h1>```, ```<html>``` y ```<body>``` es igual a un color especifico. Es preferible evitar poner el color por su nombre, puesto que unos navegadores no lo reconocen.
@@ -124,7 +124,7 @@ Estilos definidos dentro del archivo html.
         Propiedad3:valorPropiedad3;
     }```
     <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/informes/Informe1/imagenes/cap2.jpg?raw=true" width="300" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="300" height="">
     </p>
 
 - **Por clase.-** Se define un nombre para una clase y adentro se define un nombre para la propiedad y el valor del mismo. 
@@ -133,7 +133,9 @@ Estilos definidos dentro del archivo html.
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
     }```
-    
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap3.jpg?raw=true" width="300" height="">
+    </p>
     
     
 - **Por ID.- ** Se precede con el simbolo de numero y luego el nombre del id. Adentro se define la propiedad y el valor de la misma. Para utilizar este metodo es necesario definir el atributo ```id``` en las etiquetas de html.
@@ -142,7 +144,7 @@ Estilos definidos dentro del archivo html.
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
     }```
-
+    
 
 Estilos definidos en un archivo a parte ```.css```
 - Se crea un archivo ```.css``` y se ubica lo que se encontraba en ```<style>```.
