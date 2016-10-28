@@ -221,7 +221,7 @@ Quedando como resultado
 De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap22.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap22.jpg?raw=true" width="500" height="">
 </p>
 
 
@@ -236,13 +236,13 @@ Se crean cuatro columnas de un tamaño igual a 3.
 Quedando como resultado
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap19.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap19.jpg?raw=true" width="500" height="">
 </p>
 
 De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap23.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap23.jpg?raw=true" width="500" height="">
 </p>
 
 - ```col-lg```
@@ -256,13 +256,13 @@ Se crean dos columnas de un tamaño igual a 6.
 Quedando como resultado
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap20.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap20.jpg?raw=true" width="500" height="">
 </p>
 
 De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap24.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap24.jpg?raw=true" width="500" height="">
 </p>
 
 - ```col-xs```
@@ -275,27 +275,27 @@ Se crean dos columnas de un tamaño igual a 5 y una de dos.
 Quedando como resultado
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap21.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap21.jpg?raw=true" width="500" height="">
 </p>
 
 Al ser ```xs``` estas columnas a pesar de que haga mas pequeña la pantalla, se mantendran las columnas.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap25.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap25.jpg?raw=true" width="400" height="">
 </p>
 
 Como resultado final se tuvo la siguiente estructura
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap26.jpg?raw=true" width="" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap26.jpg?raw=true" width="500" height="">
 </p>
 
 ## Conclusiones y Recomendaciones
-- La herramienta de inspeccionar del navegador permite conocer información sobre el servidor del cual obtiene la información, así como permite modificar los atributos de las etiquetas.Estos atributos al ser modificados en el navegador no persisten, por lo cual si se desea agregar o modificar algún atributo se lo debe realizar en el código de la página.
-- Existe una gran variedad de etiquetas html para ubicar diferentes elementos en la pagina web, como son diferentes encabezados, párrafos, imágenes, hipervínculos, tablas, entre otros.
-- Se aprendió unas herramientas de desarrollo web como postman e inspector web. En la primera herramienta se puede conocer más sobre los métodos http, mientras que en la segunda se tiene información sobre el servidor, los documentos que se reciben, el código fuente, entre otros.
-- Es recomendable conocer los códigos de estado, o al menos los grupos, para de esta manera ubicar de que tipo es el aviso que se está recibiendo.
-- En el lenguaje html es importante acordarse de que cada etiqueta abierta tiene que ser cerrada. Tambien existen unas etiquetas que presenta excepción de esta regla como ``` <br> ``` e ``` <img > ```.
+- La creacion de hojas de estilos aparte de los archivos html, permite definir de manera general los estilos a ser aplicados, asi como crea independencia, permitiendo que pueda ser utilizado en varios documentos html, si es necesario.
+- La estructura que proporciona bootstrap, como el grid, permite dividir la pagina web y crear una estructura o diseño personalizado de acuerdo a como se quiera ubicar el contenido en la misma. De igual forma presenta varias opciones de tamaño las cuales se ajustan a las pantallas en donde se abran.
+- Es recomendable crear un archivo diferente de estilos en lugar de definir en el html o en la etiqueta, puesto que puede ser utilizado por otras paginas y es más fácil cambiar en un solo archivo que en varios o estar buscando etiqueta por etiqueta.
+- Se debe tener en cuenta que el css al aplicarse en cascada, se pueden definir varios estilos sobre un mismo elemento y de diferentes maneras, pero como resultado final se tendra el estilo que haya sido leido ultimo.
+- Es recomendable no utilizar el nombre de los colores directamente, sino es preferible usar su valor en hexadecimal, pues existen navegadores que no reconocen los colores en nombres.
 
 
 <br>
