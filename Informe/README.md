@@ -104,6 +104,17 @@ Un Framework ofrece componentes como una libreria, pero asi mismo provee plantil
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+### Introduccion Bootstrap - Grid
+El sistema de grid es utilizado para crear un diseño de pagina a traves del uso de filas y de columnas que contendran el contenido. Este sistema funciona de la siguiente manera:(Fuente: [Bootstrap](http://getbootstrap.com/css/))
+
+- Las filas se ubican dentro de un contenedor para que se encuentren alineadas.
+- Utilizar filas para crear grupos horizontales de columnas.
+- El contenido se ubica dentro de las columnas, y solamente las columnas pueden ser hijos inmmediatos de filas.
+- Las columnas son creadas teniendo en cuenta que el numero maximo de columnas es 12.
+
+
+<br>
+<a href="#cabecera">A la cabecera</a>
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
@@ -119,7 +130,7 @@ Estilos definidos dentro del archivo html.
 <br>
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="300" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="500" height="">
 </p>
 
 - **Por clase.-** Se define un nombre para una clase y adentro se define un nombre para la propiedad y el valor del mismo. 
@@ -182,11 +193,101 @@ Estilos definidos en cada etiqueta de html
     </p>
 
 ### Introduccion a Bootstrap - Grid
-
-
+Se ingresa a la pagina de Bootstrap y se busca el link para referencia a los estilos.
 
 <p align="center">
-<img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/informes/Informe1/imagenes/cap30.jpg?raw=true" width="300" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap12.jpg?raw=true" width="" height="">
+</p>
+
+Se ubica el link copiado en la seccion ```<head>``` del archivo html.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap13.jpg?raw=true" width="" height="">
+</p>
+
+Al crear un grid se tiene en cuenta que el tamaño de las columnas sumen un total de 12. Existen cuatro opciones para definir el tamaño de las columnas y que determinaran en que momento en lugar de estar horizontal pasan a estar vertical, de acuerdo al tamaño de la pantalla.
+- ```col-md```
+
+Se crean tres columnas de un tamaño igual a 4. 
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap14.jpg?raw=true" width="" height="">
+</p>
+
+Quedando como resultado
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap18.jpg?raw=true" width="" height="">
+</p>
+
+De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap22.jpg?raw=true" width="" height="">
+</p>
+
+
+- ```col-sm```
+
+Se crean cuatro columnas de un tamaño igual a 3.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap15.jpg?raw=true" width="" height="">
+</p>
+
+Quedando como resultado
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap19.jpg?raw=true" width="" height="">
+</p>
+
+De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap23.jpg?raw=true" width="" height="">
+</p>
+
+- ```col-lg```
+
+Se crean dos columnas de un tamaño igual a 6.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap16.jpg?raw=true" width="" height="">
+</p>
+
+Quedando como resultado
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap20.jpg?raw=true" width="" height="">
+</p>
+
+De acuerdo al zoom de la pantalla y al tamaño de la misma, se cambiaran de columnas a filas.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap24.jpg?raw=true" width="" height="">
+</p>
+
+- ```col-xs```
+Se crean dos columnas de un tamaño igual a 5 y una de dos.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap17.jpg?raw=true" width="" height="">
+</p>
+
+Quedando como resultado
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap21.jpg?raw=true" width="" height="">
+</p>
+
+Al ser ```xs``` estas columnas a pesar de que haga mas pequeña la pantalla, se mantendran las columnas.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap25.jpg?raw=true" width="" height="">
+</p>
+
+Como resultado final se tuvo la siguiente estructura
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap26.jpg?raw=true" width="" height="">
 </p>
 
 ## Conclusiones y Recomendaciones
