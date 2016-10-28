@@ -23,6 +23,7 @@
   * <a href="#estcss">Estructura CSS</a>
   * <a href="#vencss">Ventajas CSS</a>
   * <a href="#deflib">Definicion Librería y Framework</a>
+  * <a href="#defgrid">Introduccion Bootstrap - Grid</a>
   
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
@@ -104,6 +105,7 @@ Un Framework ofrece componentes como una libreria, pero asi mismo provee plantil
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="defgrid"></a>
 ### Introduccion Bootstrap - Grid
 El sistema de grid es utilizado para crear un diseño de pagina a traves del uso de filas y de columnas que contendran el contenido. Este sistema funciona de la siguiente manera:(Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
