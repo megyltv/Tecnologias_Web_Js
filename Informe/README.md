@@ -292,6 +292,7 @@ Como resultado final se tuvo la siguiente estructura
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap26.jpg?raw=true" width="500" height="">
 </p>
 
+<a name="estcss"></a>
 ## Conclusiones y Recomendaciones
 - La creacion de hojas de estilos aparte de los archivos html, permite definir de manera general los estilos a ser aplicados, asi como crea independencia, permitiendo que pueda ser utilizado en varios documentos html, si es necesario.
 - La estructura que proporciona bootstrap, como el grid, permite dividir la pagina web y crear una estructura o diseño personalizado de acuerdo a como se quiera ubicar el contenido en la misma. De igual forma presenta varias opciones de tamaño las cuales se ajustan a las pantallas en donde se abran.
