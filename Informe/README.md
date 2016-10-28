@@ -123,9 +123,9 @@ Estilos definidos dentro del archivo html.
         Propiedad2:valorPropiedad2;
         Propiedad3:valorPropiedad3;
     }```
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="300" height="">
-    </p>
+</p>
 
 - **Por clase.-** Se define un nombre para una clase y adentro se define un nombre para la propiedad y el valor del mismo. 
     ```
@@ -133,14 +133,14 @@ Estilos definidos dentro del archivo html.
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
     }```
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap3.jpg?raw=true" width="500" height="">
-    </p>
+</p>
     
-    En una etiqueta se pueden indicar varios nombres de clases poniendo una despues de otra.
-    <p align="center">
+En una etiqueta se pueden indicar varios nombres de clases poniendo una despues de otra.
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap11.jpg?raw=true" width="400" height="">
-    </p>
+</p>
     
     
     
@@ -150,9 +150,9 @@ Estilos definidos dentro del archivo html.
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
     }```
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap4.jpg?raw=true" width="400" height="">
-    </p>
+</p>
     
     
 Estilos definidos en un archivo a parte ```.css```
