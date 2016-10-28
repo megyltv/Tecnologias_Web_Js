@@ -196,7 +196,7 @@ Los datos se organizan mediante el uso de etiquetas.
 
 En cada etiqueta se pueden determinar atributos como nombre, numeros, entre otros, de acuerdo a lo que se necesite.
 <p align="center">
-<img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/ihtml/Informe/imagenes/cap10.jpg?raw=true" width="400" height="">
+<img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/html/Informe/imagenes/cap10.jpg?raw=true" width="400" height="">
 </p>
 
 ### Navegador
