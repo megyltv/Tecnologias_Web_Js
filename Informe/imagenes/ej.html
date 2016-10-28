@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Aprendiendo CSS</title>
+    <!--link rel="stylesheet" href="estilos.css"-->
+    <!--link rel="stylesheet" href="../estilos.css"-->
+    <link rel="stylesheet" href="../../html/estilos/estilos.css">
+    <link rel="stylesheet" href="../../html/estilos/estilosDylan.css">
+    <link rel="stylesheet" href="../../html/estilos/estilosPepito.css">
     <style>
-        html{
-            background-color: #e8caf5;
+        .borde{
+            border:black solid 5px; 
         }
-        body{
-            background-color: #a8cfff;
-        }
-        h1{
-            background-color: #d8ca86;
-        }
-        p{
-            background-color: #d060ff;
-        }
-        .nombreClaseRojo{
-            background-color: red;
-        }
-        .nombreClaseAzul{
-            background-color: darkblue;
-        }
-        .nombreClaseAmarillo{
-            background-color: yellow;
-        }
-    
     </style>
-</head>
+    </head>
 <body>
-   <p class="nombreClaseRojo">Parrafo</p>
-    <h1 class="nombreClaseAmarillo">Amigos</h1>
+   <p class="nombreClaseRojo borde">Parrafo</p>
+    <h1>Amigos</h1>
     <p class="nombreClaseAzul">Parrafo2</p>
     <h1>Politecnicos</h1>
     <p id="parrafoverde" class="nombreClaseAmarillo">Parrafo Amarillo</p>
     <p>ULTIMO PARRAFO SIN CLASES</p>
     <cualquiera>Hola</cualquiera>
+    
+    <p id="parrafoverde"> Hola con ID
+    </p>
+    <br><br>
+    <h2 style="background-color:white">
+    Estilo como atributo</h2>
     
 </body>
 </html>

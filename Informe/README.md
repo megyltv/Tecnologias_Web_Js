@@ -137,6 +137,12 @@ Estilos definidos dentro del archivo html.
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap3.jpg?raw=true" width="300" height="">
     </p>
     
+    En una etiqueta se pueden indicar varios nombres de clases poniendo una despues de otra.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap11.jpg?raw=true" width="300" height="">
+    </p>
+    
+    
     
 - **Por ID.- ** Se precede con el simbolo de numero y luego el nombre del id. Adentro se define la propiedad y el valor de la misma. Para utilizar este metodo es necesario definir el atributo ```id``` en las etiquetas de html.
 ```
@@ -144,15 +150,49 @@ Estilos definidos dentro del archivo html.
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
     }```
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap4.jpg?raw=true" width="300" height="">
+    </p>
     
-
+    
 Estilos definidos en un archivo a parte ```.css```
-- Se crea un archivo ```.css``` y se ubica lo que se encontraba en ```<style>```.
+- Se crea un archivo ```.css```. Este archivo puede ubicarse a la misma altura del index.html o puede ser ubicado dentro de otra carpeta.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap5.jpg?raw=true" width="300" height="">
+    </p>
+    
+- Se ubica lo que se encontraba en ```<style>```, solo el codigo de las reglas de css, sin la etiqueta ```<style>```.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap6.jpg?raw=true" width="300" height="">
+    </p>
 
+- En el archivo html en la seccion ```<head>``` se ubica la etiqueta ```<link>```, se indica el tipo de archivo, stylesheet, y se indica la ubicacion del mismo.
 
+    Ubicacion:
+    <br>En la misma altura: ```href="estilos.css"```
+    <br>En una carpeta: ```href="estilos/estilos.css"```
+    <br>En una carpeta superior: ```href="../estilos/estilos.css"```
+    
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap7.jpg?raw=true" width="300" height="">
+    </p>
 
+- Se pueden crear y referenciar a mas de una hoja de estilo.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap8.jpg?raw=true" width="300" height="">
+    </p>
         
 
+- En caso de que existan varias hojas de estilo, y en ambas haya un diferente valor de propiedad para una misma etiqueta, se seleccionara el valor que se encuentre en la ultima hoja de estilo.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap9.jpg?raw=true" width="300" height="">
+    </p>
+
+Estilos definidos en cada etiqueta de html
+- En la etiqueta que se desee dar un estilo, se ubica como atributo un ```style```, y se especifica el parametro y el valor del parametro.
+    <p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap10.jpg?raw=true" width="300" height="">
+    </p>
 
 ### Introduccion a Bootstrap - Grid
 
