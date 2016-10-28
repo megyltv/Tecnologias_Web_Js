@@ -117,22 +117,22 @@ Estilos definidos dentro del archivo html.
 
 - **Por etiqueta.-** Se especifica el nombre del elemento o etiqueta de html. Adentro se indica que el atributo de color de fondo (background-color) de la etiqueta ```<h1>```, ```<html>``` y ```<body>``` es igual a un color especifico. Es preferible evitar poner el color por su nombre, puesto que unos navegadores no lo reconocen.
 
+    ```
      nombreTag{
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
-        Propiedad3:valorPropiedad3;
-    }
+        Propiedad3:valorPropiedad3; }```
     
     <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="" height="">
     </p>
 
 - **Por clase.-** Se define un nombre para una clase y adentro se define un nombre para la propiedad y el valor del mismo. 
-    
+    ```
     .nombreClase{
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
-    }
+    }```
     
     <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap3.jpg?raw=true" width="" height="">
@@ -147,8 +147,7 @@ Estilos definidos dentro del archivo html.
     
     
 - **Por ID.- ** Se precede con el simbolo de numero y luego el nombre del id. Adentro se define la propiedad y el valor de la misma. Para utilizar este metodo es necesario definir el atributo ```id``` en las etiquetas de html.
-
-    ```
+```
     #nombreId{
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
@@ -161,13 +160,11 @@ Estilos definidos dentro del archivo html.
     
 Estilos definidos en un archivo a parte ```.css```
 - Se crea un archivo ```.css```. Este archivo puede ubicarse a la misma altura del index.html o puede ser ubicado dentro de otra carpeta.
-    
     <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap5.jpg?raw=true" width="300" height="">
     </p>
     
 - Se ubica lo que se encontraba en ```<style>```, solo el codigo de las reglas de css, sin la etiqueta ```<style>```.
-    
     <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap6.jpg?raw=true" width="400" height="">
     </p>
