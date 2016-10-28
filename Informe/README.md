@@ -116,14 +116,14 @@ Estilos definidos dentro del archivo html.
     </p>
 
 - **Por etiqueta.-** Se especifica el nombre del elemento o etiqueta de html. Adentro se indica que el atributo de color de fondo (background-color) de la etiqueta ```<h1>```, ```<html>``` y ```<body>``` es igual a un color especifico. Es preferible evitar poner el color por su nombre, puesto que unos navegadores no lo reconocen.
-<br>
+
 ```
      nombreTag{
         Propiedad1:valorPropiedad1;
         Propiedad2:valorPropiedad2;
         Propiedad3:valorPropiedad3;
     }```
-    
+    <br>
     <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="" height="">
     </p>
