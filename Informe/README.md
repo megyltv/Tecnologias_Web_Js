@@ -117,13 +117,13 @@ Estilos definidos dentro del archivo html.
 
 - **Por etiqueta.-** Se especifica el nombre del elemento o etiqueta de html. Adentro se indica que el atributo de color de fondo (background-color) de la etiqueta ```<h1>```, ```<html>``` y ```<body>``` es igual a un color especifico. Es preferible evitar poner el color por su nombre, puesto que unos navegadores no lo reconocen.
 
-    ```
-     nombreTag{
-        Propiedad1:valorPropiedad1;
-        Propiedad2:valorPropiedad2;
-        Propiedad3:valorPropiedad3; }```
+```
+    nombreTag{
+    Propiedad1:valorPropiedad1;
+    Propiedad2:valorPropiedad2;
+    Propiedad3:valorPropiedad3; }```
     
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap2.jpg?raw=true" width="" height="">
     </p>
 
@@ -134,13 +134,13 @@ Estilos definidos dentro del archivo html.
         Propiedad2:valorPropiedad2;
     }```
     
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap3.jpg?raw=true" width="" height="">
     </p>
     
     En una etiqueta se pueden indicar varios nombres de clases poniendo una despues de otra.
     
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap11.jpg?raw=true" width="" height="">
     </p>
     
@@ -153,19 +153,21 @@ Estilos definidos dentro del archivo html.
         Propiedad2:valorPropiedad2;
     }```
     
-    <p align="center">
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap4.jpg?raw=true" width="400" height="">
     </p>
     
     
 Estilos definidos en un archivo a parte ```.css```
 - Se crea un archivo ```.css```. Este archivo puede ubicarse a la misma altura del index.html o puede ser ubicado dentro de otra carpeta.
-    <p align="center">
+
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap5.jpg?raw=true" width="300" height="">
     </p>
     
 - Se ubica lo que se encontraba en ```<style>```, solo el codigo de las reglas de css, sin la etiqueta ```<style>```.
-    <p align="center">
+
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap6.jpg?raw=true" width="400" height="">
     </p>
 
@@ -176,24 +178,28 @@ Estilos definidos en un archivo a parte ```.css```
     <br>En una carpeta: ```href="estilos/estilos.css"```
     <br>En una carpeta superior: ```href="../estilos/estilos.css"```
     <br>
-    <p align="center">
+
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap7.jpg?raw=true" width="500" height="">
     </p>
 
 - Se pueden crear y referenciar a mas de una hoja de estilo.
-    <p align="center">
+
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap8.jpg?raw=true" width="500" height="">
     </p>
         
 
 - En caso de que existan varias hojas de estilo, y en ambas haya un diferente valor de propiedad para una misma etiqueta, se seleccionara el valor que se encuentre en la ultima hoja de estilo.
-    <p align="center">
+
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap9.jpg?raw=true" width="" height="">
     </p>
 
 Estilos definidos en cada etiqueta de html
 - En la etiqueta que se desee dar un estilo, se ubica como atributo un ```style```, y se especifica el parametro y el valor del parametro.
-    <p align="center">
+    
+<p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap10.jpg?raw=true" width="" height="">
     </p>
 
