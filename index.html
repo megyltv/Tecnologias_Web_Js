@@ -5,8 +5,11 @@
     <title>Document</title>
     <script>
         //alert('Hola');
-        var texto ="Texto";
-        console.log(texto);
+        
+        // --- VARIABLES
+        
+//        var texto ="Texto";
+//        console.log(texto);
         
 //        var textoNumero ="2";
 //        console.log('Valor cuando es string');
@@ -55,25 +58,94 @@
 //        console.log('Valor cuando es undefined');
 //        console.log(textoNumero);
         
-        var arregloString = ['1','2','3'];
-        console.log(arregloString);
+        // -------- ARREGLOS
         
-        var arregloNumeros = [1,2,3];
-        console.log(arregloNumeros);
+//        var arregloString = ['1','2','3'];
+//        console.log(arregloString);
+//        
+//        var arregloNumeros = [1,2,3];
+//        console.log(arregloNumeros);
+//        
+//        var arregloFloat = [1.2,2.3,3.4,4.5];
+//        console.log(arregloFloat);
+//        
+//        var arregloBooleano = [false,true,false];
+//        console.log(arregloBooleano);
+//        
+//        var arregloNull = [null, null, null];
+//        console.log(arregloNull);
+//        
+//        var arregloUndefined = [undefined,undefined,undefined];
+//        console.log(arregloUndefined);
+//        
+//        var arregloTodo = ["Nombre", 3.1416, true, false, undefined, null, "Apellido"];
+//        console.log(arregloTodo);
+//        console.log(arregloTodo.length);
         
-        var arregloFloat = [1.2,2.3,3.4,4.5];
-        console.log(arregloFloat);
+        // ------ OBJETOS
         
-        var arregloBooleano = [false,true,false];
-        console.log(arregloBooleano);
+        var michelle = 'Nombre Michelle';
+        var meg = {
+            'nombre': 'Megan',
+            'apellido':'Toinga',
+            edad: 22,
+            mascotas: ['Max','Dash',michelle],
+            hermanos:[{
+                nombre: 'Samantha',
+                apellido: 'Toinga'
+            },{
+                nombre: 'Stephany',
+                apellido: 'Toinga'
+            }],
+            
+            getNombre: function(){
+                return this.nombre;
+            },
+            
+            getApellido: function(){
+                return this.apellido;
+            },
         
-        var arregloNull = [null, null, null];
-        console.log(arregloNull);
+            setApellido: function(nuevoApellido){
+                this.apellido=nuevoApellido;
+            }
+        }
         
-        var arregloUndefined = [undefined,undefined,undefined];
-        console.log(arregloUndefined);
+        // : -> Definir objetos     = -> Asignacion
+        
+//        console.log('Acceder Nombre');
+//        console.log(meg.nombre);
+//        
+//        console.log('Acceder Apellido');
+//        console.log(meg.apellido);
+//        
+//        console.log('Acceder Hermanos');
+//        console.log(meg.hermanos);
+        
+        
+        
+        console.log(meg.getNombre());
+        console.log(meg.getApellido());
+        console.log(meg.setApellido('Villafuerte'));
+        console.log(meg.getApellido());
+        
+        // ----- FUNCIONES
+        
+//        function getNombreMegan(){
+//            return meg.nombre;
+//        }
+        
         
     </script>
+<!-- XML
+   
+    <meg>
+        <nombre>Megan</nombre>
+        <apellido>Toinga</apellido>
+        <edad>22</edad>
+    </meg>
+-->
+    
 </head>
 <body>
     
