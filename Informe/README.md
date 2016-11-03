@@ -106,7 +106,7 @@ SEO especifica técnicas que deberían incorporarse en el desarrollo de la pági
 ### Bootstrap
 Bootstrap es un framework de HTML, CSS y Javascript enfocado en el desarrollo responsive y de sitios web para móviles. Permite realizar un diseño front-end fácil para todos y para todos los dispositivos, además de que es rápido de hacer. 
 Existen dos formas de obtener este framework, ya sea haciendo referencia a la fuente original o descargando el código. 
-Bootstrap permite diseñar mediante grid, los cuales definen las columnas que se va a utilizar para definir la estructura, permite definir tipografías, elementos css, formularios, componentes y plugins de Javascript.
+Bootstrap permite diseñar mediante grid, los cuales definen las columnas que se va a utilizar para definir la estructura, permite definir tipografías, elementos css, formularios, componentes y plugins de Javascript. (Fuente: [LibrosWeb](http://librosweb.es/libro/bootstrap_3/)) 
 
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -118,13 +118,81 @@ Bootstrap permite diseñar mediante grid, los cuales definen las columnas que se
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
-### CSS
-Estilos definidos dentro del archivo html. 
-
+### Bootstrap
+Se ingresa a la página y se da clic en Descargar.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/02-css/Informe/imagenes/cap26.jpg?raw=true" width="500" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap2.jpg?raw=true" width="500" height="">
 </p>
+
+Se puede descargar toda la librería de este framework.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap3.jpg?raw=true" width="500" height="">
+</p>
+
+Se puede hacer referencia al CDN en donde se encuentra el framework.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap4.jpg?raw=true" width="500" height="">
+</p>
+
+Se ingresa el link para referenciar el framework en la sección ``<header>``. De esta manera se podra utilizar los elementos y clases que provee bootstrap.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap5.jpg?raw=true" width="500" height="">
+</p>
+
+### Encabezado
+La clase ``<small>`` permite crear texto mas claro y secundario en el encabezado.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap6.jpg?raw=true" width="500" height="">
+</p>
+
+### Inline
+Para envolver el codigo dentro de una linea se debe de ingresar entre ``&lt; &gt;``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap7.jpg?raw=true" width="500" height="">
+</p>
+
+### Entradas del usuario
+Para indicar alguna entrada que debe de hacerse mediante teclado, se realiza utilizando la etiqueta ``<kbd>``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap8.jpg?raw=true" width="500" height="">
+</p>
+
+### Tablas
+Existen diferentes clases para las tablas que se pueden aplicar, de acuerdo a lo que se necesite.
+
+- Tabla basica, se ingresa con la clase: ``table``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap9.jpg?raw=true" width="500" height="">
+</p>
+
+- Tabla con bordes, se ingresa con la clase: ``table table-bordered``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap10.jpg?raw=true" width="500" height="">
+</p>
+
+- Tabla a lineas, se ingresa con la clase: ``table table-striped``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap11.jpg?raw=true" width="500" height="">
+</p>
+
+- Filas con clases contextuales, las filas se pintan de colores de acuerdo a su estado: activo (active), exitoso (success), informativo (info), advertencia (warning), peligro (danger).
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap12.jpg?raw=true" width="500" height="">
+</p>
+
+### Formularios
+
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
