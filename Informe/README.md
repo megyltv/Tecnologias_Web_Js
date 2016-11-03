@@ -66,43 +66,60 @@ El diseño de una página web debe de planificado y enfocado en lo que las perso
 
 <a name="calWeb"></a>
 ### Calidad Web
+- **Usar HTML5.-** Ubicar la etiqueta ``!DOCTYPE`` para indicar la versión de HTML utilizada y que el navegador pueda renderizar la imagen. De igual forma, permite que la sintaxis del código pueda ser evaluada.
+- **Separar archivos CSS.-** Utilizar archivos para ubicar los estilos permite reducir el costo en el desarrollo y facilita a los navegadores su lectura.
+- **Validación Web.-** En un software que permite evaluar la página Web de acuerdo a estándares. Este retorna una lista de los errores que se hayan encontrado.
+- **Etiqueta Title.-** La etiqueta ``title`` describe el contenido de la página web. Es importante porque este se encuentra visible en la lista de los motores de búsqueda, en la barra de navegación del browser y se desplegará en los marcadores del usuario. 
+Este título debe ser lo más corto, descriptivo y tiene que coincidir con el contenido que el usuario esté buscando.
+- **Etiquetas de Encabezados.-** El elemento ``<h1>`` se utiliza para describir el encabezado principal de la pagina Web. En caso de no utilizar esta etiqueta, esto creara confunsion en los motores de busqueda y en los software que intenten entender la estrctura de la pagina.
+Utilizar ``<h1>`` para el encabezado principal, y ``<h2>`` y ``<h3>`` para encabezados de mas bajo nivel.
+- **Set de Caracteres.-** La etiqueta ``<meta charset>`` se ubica en head. En esta parte se especifica el conjunto de caracteres que se va a utilizar para la comunicacion, ademas que es importante para la calidad del sitio Web.
+- **Formato de fecha.-** La ISO define un formato internacional para especificar la fecha que es: yyyy-mm-dd, donde yyyy es el años, mm es el mes y dd es el día. Usar un formato permite que los usuarios entiendan las fechas que se especifican (Fuente:[W3School](http://w3schools.bootcss.com/website/web_quality.html)).
 
 
 <br>
 <a href="#cabecera">A la cabecera</a>
 
-<p align="center">
-<img src="http://s3.amazonaws.com/videos_mxm/caretas/estructura-css_37167_1_11380.jpg" width="400">
-</p>
-
 <a name="valWeb"></a>
 ### Validación Web
+Existen software o programas que permiten comprobar que las páginas Web cumplan con estándares web definidos por la W3C. Existen validadores tanto para archivos Web, archivos CSS, archivos XML y archivos XHTML.
 
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap1.jpg?raw=true" width="500" height="">
+</p>
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="seoWeb"></a>
 ### SEO
-
+SEO u Optimización de motores de búsqueda es el proceso de mejorar el rango (visibilidad) de una página Web en los motores de búsqueda. Mientras más se encuentre en los primeros puestos, más se espera que sea visitada. SEO considera cómo funciona el motor de búsqueda, qués es lo que las personas buscan, y cuáles términos son tipeados. Para optimizar la página se tiene que editar el contenido y el código html, y darle mayor importancia a las palabras claves.
+SEO especifica técnicas que deberían incorporarse en el desarrollo de la página Web, especialmente en los menús y en la estructura de navegación. (Fuente: [W3School]([W3School](http://w3schools.bootcss.com/website/web_search.html).
 
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<p align="center">
+    <img src="http://www.frikipandi.com/wp-content/uploads/2014/12/SEO-2015.jpg" width="250" height="">
+</p>
+
 <a name="defBoot"></a>
 ### Bootstrap
+Bootstrap es un framework de HTML, CSS y Javascript enfocado en el desarrollo responsive y de sitios web para móviles. Permite realizar un diseño front-end fácil para todos y para todos los dispositivos, además de que es rápido de hacer. 
+Existen dos formas de obtener este framework, ya sea haciendo referencia a la fuente original o descargando el código. 
+Bootstrap permite diseñar mediante grid, los cuales definen las columnas que se va a utilizar para definir la estructura, permite definir tipografías, elementos css, formularios, componentes y plugins de Javascript.
+
+<br>
+<a href="#cabecera">A la cabecera</a>
 
 <p align="center">
 <img src="http://dimanacho.com/wp-content/uploads/2016/08/url.png" width="400">
 </p>
 
-<br>
-<a href="#cabecera">A la cabecera</a>
-
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
 ### CSS
-Estilos definidos dentro del archivo html.
+Estilos definidos dentro del archivo html. 
 
 
 <p align="center">
@@ -111,11 +128,10 @@ Estilos definidos dentro del archivo html.
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
-- La creacion de hojas de estilos aparte de los archivos html, permite definir de manera general los estilos a ser aplicados, asi como crea independencia, permitiendo que pueda ser utilizado en varios documentos html, si es necesario.
-- La estructura que proporciona bootstrap, como el grid, permite dividir la pagina web y crear una estructura o diseño personalizado de acuerdo a como se quiera ubicar el contenido en la misma. De igual forma presenta varias opciones de tamaño las cuales se ajustan a las pantallas en donde se abran.
-- Es recomendable crear un archivo diferente de estilos en lugar de definir en el html o en la etiqueta, puesto que puede ser utilizado por otras paginas y es más fácil cambiar en un solo archivo que en varios o estar buscando etiqueta por etiqueta.
-- Se debe tener en cuenta que el css al aplicarse en cascada, se pueden definir varios estilos sobre un mismo elemento y de diferentes maneras, pero como resultado final se tendra el estilo que haya sido leido ultimo.
-- Es recomendable no utilizar el nombre de los colores directamente, sino es preferible usar su valor en hexadecimal, pues existen navegadores que no reconocen los colores en nombres.
+- .
+- .
+- .
+- .
 
 
 <br>
