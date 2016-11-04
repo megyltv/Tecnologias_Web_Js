@@ -82,13 +82,13 @@ Utilizar ``<h1>`` para el encabezado principal, y ``<h2>`` y ``<h3>`` para encab
 
 <a name="valWeb"></a>
 ### Validación Web
-Existen software o programas que permiten comprobar que las páginas Web cumplan con estándares web definidos por la W3C. Existen validadores tanto para archivos Web, archivos CSS, archivos XML y archivos XHTML.
+Existen software o programas que permiten comprobar que las páginas Web cumplan con estándares web definidos por la W3C. Existen validadores tanto para archivos Web, archivos CSS, archivos XML y archivos XHTML. (Fuente:[W3School](http://w3schools.bootcss.com/website/web_validate.html))
+
+<a href="#cabecera">A la cabecera</a>
 
 <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap1.jpg?raw=true" width="500" height="">
 </p>
-
-<a href="#cabecera">A la cabecera</a>
 
 <a name="seoWeb"></a>
 ### SEO
@@ -209,6 +209,8 @@ Para ingresar texto en el cuadro de texto (aad-on)
 <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap15.jpg?raw=true" width="600" height="">
 </p>
+
+<a href="#cabecera">A la cabecera</a>
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
