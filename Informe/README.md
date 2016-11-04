@@ -212,10 +212,10 @@ Para ingresar texto en el cuadro de texto (aad-on)
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
-- .
-- .
-- .
-- .
+- Existen varios factores que se pueden tomar en cuenta al momento de hacer una página Web, como es que sea válida, que se tenga en cuenta un buen diseño, la calidad de la página y el SEO.
+- Bootstrap es un framework que permite realizar un diseño de forma rápida y fácil, además que sea responsive, es decir que se pueda adaptar a las diferentes tamaños de pantallas. Está conformado por los elementos de html, pero presenta clases las cuales ayudan en el diseño además de que promueve tener accesibilidad en las páginas.
+- Al momento de diseñar una página Web se deben de tener en cuenta unos criterios como, no poner mucha información, hacer notar lo más importante, preocuparse de las necesidades del usuario, entre otros.
+- En una página Web se debe de buscar que la información y el principal objetivo sea lo primero que el usuario visualice al momento de ingresar en la página. De igual forma, esto permitirá que los motores de búsqueda la encuentren.
 
 
 <br>
