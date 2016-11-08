@@ -7,11 +7,25 @@
         
         var count=10;
         console.log('Empieza');
+//        while(count>0){
+//            console.log(count);
+//            count--;
+//        }
+        
+        var arregloNumero=[];
         while(count>0){
-            console.log(count);
+            if(count%2===0){
+                console.log('El numero:' + count + ' es par' );
+            }else{
+                console.log('El numero:' + count + ' es impar' );           
+            }
+            arregloNumero.push(count);
             count--;
         }
         
+        console.log('Se acaba');
+        arregloNumero.pop();
+        console.log(arregloNumero);
         
     </script>
 <!-- XML
