@@ -15,8 +15,8 @@
         
         // -------- WHILE E IF
         
-        var arregloNumero=[];
-//        while(count>0){
+//        var arregloNumero=[];
+//        //while(count>0){
 //            if(count%2===0){
 //                console.log('El numero:' + count + ' es par' );
 //            }else{
@@ -24,97 +24,120 @@
 //            }
 //            arregloNumero.push(count);
 //            count--;
-//        }
-        
-//        console.log('Se acaba');
-//        arregloNumero.pop();
-//        arregloNumero.splice(3,1,11); //Indice, y numero de elementos, insertar
-//        console.log(arregloNumero);
-        
-        
-        // ------------------------------------- Ejercicio 1
-//        var numSheep=4;
-//        var monthNumber=1;
-//        var monthsToPrint=12;
+//        //}
 //        
-//        while(monthNumber<=monthsToPrint){
+////        console.log('Se acaba');
+////        arregloNumero.pop();
+////        arregloNumero.splice(3,1,11); //Indice, y numero de elementos, insertar
+////        console.log(arregloNumero);
+//        
+//        
+//        // ------------------------------------- Ejercicio 1
+////        var numSheep=4;
+////        var monthNumber=1;
+////        var monthsToPrint=12;
+////        
+//        //while(monthNumber<=monthsToPrint){
 //            numSheep=numSheep*4;
 //            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
 //            monthNumber++;
-//        }
-        
-        
-        /// --------- FOR
-        
-//        for(count=10;count>0;count--){
+//        //}
+//        
+//        
+//        /// --------- FOR
+//        
+//        //for(count=10;count>0;count--){
 //            if(count%2===0){
 //                console.log('El numero:' + count + ' es par' );
 //            }else{
 //                console.log('El numero:' + count + ' es impar' );           
 //            }
 //            arregloNumero.push(count);
-//        }
+//        //}
 //        
-//        var numSheep=4;
-//        var monthNumber=1;
+////        var numSheep=4;
+////        var monthNumber=1;
 //        
-//        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
+//        //for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
 //            numSheep=numSheep*4;
 //            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//        //}
+//        
+//        
+//        // ------------------------------------------- Ejercicio 2
+//        
+//        //while(count>0){
+//            if(count>1 && count<=10){
+//                if(count%2==0){
+//                    console.log('El numero:' + count + ' es par' );
+//                } 
+//            }
+//            count--;
+//        //}
+//        
+//        // ------------------------------------------- Ejercicio 3
+//        
+//        console.log('Ejercicio 3');
+//        
+//        //var numSheep=4;
+//        //var monthNumber=1;
+//        //var monthsToPrint=12;
+//        
+//        //while(monthNumber<=monthsToPrint){
+//            numSheep=numSheep*4;
+//            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//            
+//            if(numSheep>10000){
+//                numSheep=numSheep/2;
+//                console.log('Sheeps: -' +numSheep);
+//            }
+//            
+//            monthNumber++;
+//            
+//        //}
+//        
+//        // ----------------------------------------- Ejercicio 4
+//        
+//        console.log('Ejercicio 4');
+//        
+////        var numSheep=4;
+////        var monthNumber=1;
+////        var monthsToPrint=12;
+//        
+//        //while(monthNumber<=monthsToPrint){
+//            numSheep=numSheep*4;
+//            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//            
+//            if(monthNumber%4===0){
+//                console.log(monthNumber+'\n Remuevo 75%');
+//                console.log('Removed: -' +numSheep*0.75);
+//                numSheep=numSheep-numSheep*0.75;
+//                console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//            }
+//            else if(numSheep>10000){
+//                console.log(monthNumber+'\n Remuevo mas de 10000');
+//                numSheep=numSheep/2;
+//                console.log('Sheeps: -' +numSheep);
+//            }
+//            
+//            monthNumber++;
+//            
+//        //}
+        
+        // --------------------------------------- Ejercicio 5 : Prompt
+        
+//        var respuesta = prompt('Cual es tu edad, Amigo?');
+//        console.log(parseInt(respuesta));
+        
+        // --------------------------------------- Ejercicio 6 : Multiplicar
+        
+//        function multiplicar3(numero1,numero2,numero3){
+//            return numero1*numero2*numero3;
 //        }
+//        
+//        console.log(multiplicar3(2,6,9));
         
-        
-        // ------------------------------------------- Ejercicio 2
-        
-        while(count>0){
-            if(count>1 && count<=10){
-                if(count%2==0){
-                    console.log('El numero:' + count + ' es par' );
-                } 
-            }
-            count--;
-        }
-        
-        // ------------------------------------------- Ejercicio 3
-        var numSheep=4;
-        var monthNumber=1;
-        var monthsToPrint=12;
-        
-        while(monthNumber<=monthsToPrint){
-            numSheep=numSheep*4;
-            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
-            
-            if(numSheep>10000){
-                numSheep=numSheep/2;
-                console.log('Sheeps: -' +numSheep);
-            }
-            
-            monthNumber++;
-            
-        }
-        
-        // ----------------------------------------- Ejercicio 4
-        while(monthNumber<=monthsToPrint){
-            numSheep=numSheep*4;
-            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
-            
-            if(monthNumber%4===0){
-                console.log(monthNumber+'\n Remuevo 75%');
-                console.log('Removed: -' +numSheep*0.75);
-                numSheep=numSheep-numSheep*0.75;
-                console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
-            }
-            else if(numSheep>10000){
-                console.log(monthNumber+'\n Remuevo mas de 10000');
-                numSheep=numSheep/2;
-                console.log('Sheeps: -' +numSheep);
-            }
-            
-            monthNumber++;
-            
-        }
-        
-        
+        // --------------------------------------- Ejercicio 7 : Menor y Mayor
         
     </script>
 </head>
