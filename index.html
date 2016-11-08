@@ -16,15 +16,15 @@
         // -------- WHILE E IF
         
         var arregloNumero=[];
-        while(count>0){
-            if(count%2===0){
-                console.log('El numero:' + count + ' es par' );
-            }else{
-                console.log('El numero:' + count + ' es impar' );           
-            }
-            arregloNumero.push(count);
-            count--;
-        }
+//        while(count>0){
+//            if(count%2===0){
+//                console.log('El numero:' + count + ' es par' );
+//            }else{
+//                console.log('El numero:' + count + ' es impar' );           
+//            }
+//            arregloNumero.push(count);
+//            count--;
+//        }
         
 //        console.log('Se acaba');
 //        arregloNumero.pop();
@@ -32,6 +32,50 @@
 //        console.log(arregloNumero);
         
         
+        // ------------------------------------- Ejercicio 1
+//        var numSheep=4;
+//        var monthNumber=1;
+//        var monthsToPrint=12;
+//        
+//        while(monthNumber<=monthsToPrint){
+//            numSheep=numSheep*4;
+//            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//            monthNumber++;
+//        }
+        
+        
+        /// --------- FOR
+        
+//        for(count=10;count>0;count--){
+//            if(count%2===0){
+//                console.log('El numero:' + count + ' es par' );
+//            }else{
+//                console.log('El numero:' + count + ' es impar' );           
+//            }
+//            arregloNumero.push(count);
+//        }
+//        
+//        var numSheep=4;
+//        var monthNumber=1;
+//        
+//        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
+//            numSheep=numSheep*4;
+//            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+//        }
+        
+        
+        // ------------------------------------------- Ejercicio 2
+        
+        while(count>0){
+            if(count>1 && count<=10){
+                if(count%2==0){
+                    console.log('El numero:' + count + ' es par' );
+                } 
+            }
+            count--;
+        }
+        
+        // ------------------------------------------- Ejercicio 3
         var numSheep=4;
         var monthNumber=1;
         var monthsToPrint=12;
@@ -39,42 +83,40 @@
         while(monthNumber<=monthsToPrint){
             numSheep=numSheep*4;
             console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
-            monthNumber++;
-        }
-        
-        
-        /// --------- FOR
-        
-        for(count=10;count>0;count--){
-            if(count%2===0){
-                console.log('El numero:' + count + ' es par' );
-            }else{
-                console.log('El numero:' + count + ' es impar' );           
+            
+            if(numSheep>10000){
+                numSheep=numSheep/2;
+                console.log('Sheeps: -' +numSheep);
             }
-            arregloNumero.push(count);
+            
+            monthNumber++;
+            
         }
         
-        var numSheep=4;
-        var monthNumber=1;
-        
-        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
+        // ----------------------------------------- Ejercicio 4
+        while(monthNumber<=monthsToPrint){
             numSheep=numSheep*4;
             console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+            
+            if(monthNumber%4===0){
+                console.log(monthNumber+'\n Remuevo 75%');
+                console.log('Removed: -' +numSheep*0.75);
+                numSheep=numSheep-numSheep*0.75;
+                console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+            }
+            else if(numSheep>10000){
+                console.log(monthNumber+'\n Remuevo mas de 10000');
+                numSheep=numSheep/2;
+                console.log('Sheeps: -' +numSheep);
+            }
+            
+            monthNumber++;
+            
         }
-        
         
         
         
     </script>
-<!-- XML
-   
-    <meg>
-        <nombre>Megan</nombre>
-        <apellido>Toinga</apellido>
-        <edad>22</edad>
-    </meg>
--->
-    
 </head>
 <body>
     
