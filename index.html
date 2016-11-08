@@ -168,8 +168,42 @@
             return rangers;
         }
         
-        console.log( 'Each Park Ranger should load '+feedPerRanger(4,2)+ ' lbs of feed today');
+        console.log( 'Each Park Ranger should load '+feedPerRanger(4,4)+ ' lbs of feed today');
         
+        
+        // ------------------------------------- Ejercicio 10
+        
+        var movie1=[16,"Candles"];
+        var movie2=[3,"Men", "and", "a", "Baby"];
+        var eightiesMovies = [movie1,movie2];
+        
+        var infant = eightiesMovies[1][4]; //Escoger variable donde esta, el elemento
+//        console.log(infant);
+        
+        
+        
+        // ------------------------------------- Ejercicio 11
+        
+        var arreglo = [1,"2",3,"4",5,"seis"];
+        
+        console.log(typeof 1);
+        console.log(typeof "1");
+        console.log(typeof {});
+        console.log(typeof []);
+        console.log(typeof true);
+        console.log(typeof false);
+        
+        function CalcularString(arreglo){ //3
+            var count =0;
+            for(var i=0; i<arreglo.length;i++){
+                if(typeof arreglo[i] =='string'){
+                    count++;
+                }  
+            }
+            return count;
+        }
+        
+        console.log(CalcularString(arreglo));
         
     </script>
 </head>
