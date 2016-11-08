@@ -12,6 +12,9 @@
 //            count--;
 //        }
         
+        
+        // -------- WHILE E IF
+        
         var arregloNumero=[];
         while(count>0){
             if(count%2===0){
@@ -23,9 +26,34 @@
             count--;
         }
         
-        console.log('Se acaba');
-        arregloNumero.pop();
-        console.log(arregloNumero);
+//        console.log('Se acaba');
+//        arregloNumero.pop();
+//        arregloNumero.splice(3,1,11); //Indice, y numero de elementos, insertar
+//        console.log(arregloNumero);
+        
+        
+        var numSheep=4;
+        var monthNumber=1;
+        var monthsToPrint=12;
+        
+        while(monthNumber<=monthsToPrint){
+            numSheep=numSheep*4;
+            console.log('There will be ' +numSheep+ ' after ' +monthNumber+ ' month(s)');
+            monthNumber++;
+        }
+        
+        
+        /// --------- FOR
+        
+        for(count=10;count>0;count--){
+            if(count%2===0){
+                console.log('El numero:' + count + ' es par' );
+            }else{
+                console.log('El numero:' + count + ' es impar' );           
+            }
+            arregloNumero.push(count);
+        }
+        
         
     </script>
 <!-- XML
