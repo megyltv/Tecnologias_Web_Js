@@ -1,0 +1,16 @@
+{
+  "name": "tecnologiaswebtmegan",
+  "version": "1.0.1",
+  "description": "ejemplo para usar npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculadora",  
+      "eje3mplo",
+      "estudip"
+  ],
+  "author": "Megan Toinga",
+  "license": "MIT"
+}
