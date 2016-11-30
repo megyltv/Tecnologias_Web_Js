@@ -17,17 +17,20 @@ var usuarios = [
         cedula: 456789123
     }
 ];
+var contador=3;
 
 app.get('/', function (req, res) {
     res.send('Hello World!')
 })
 
+//------------------ Buscar todos
 app.get('/Usuario', function (req, res) {
 
     res.json(usuarios);
-    
+
 })
 
+//------------------ Buscar uno
 app.get('/Usuario/:idUsuario', function (req, res) {
     var idActual = req.params.idUsuario; //guardar parametros 
     //Buscando en todo el arreglo
@@ -37,6 +40,7 @@ app.get('/Usuario/:idUsuario', function (req, res) {
             res.json(usuarios[i]);
         }
     }
+    //Si no lo encuentra responda que no existe
     res.send('No existe usuario');
 })
 
@@ -47,6 +51,7 @@ app.listen(puerto, function () {
 puerto = 6000;
 
 app.post('/TecnologiasWeb', function (req, res) {
+    //    
 
     var parametros = req.params;
     console.log(parametros);
@@ -64,6 +69,30 @@ app.post('/TecnologiasWeb', function (req, res) {
     console.log(res.headers);
     //res.send('con POST')
 
+})
+
+app.post('/Usuario', function (req, res) {
+    //------------------------ Crear
+    console.log(req.query.nombre);
+
+    if (!req.query.nombre) {
+        res.send('No envio el nombre');
+    }
+    if (!req.query.cedula) {
+        res.send('No envio la cedula');
+    }
+    
+    var nuevoUsuario={
+        id:contador+1,
+        nombre: req.query.nombre,
+        cedula:req.query.cedula
+    }
+    
+    usuarios.push(nuevoUsuario);
+    contador=contador++;
+    res.json(nuevoUsuario);
+    
+    
 })
 
 app.listen(puerto, function () {
