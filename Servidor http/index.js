@@ -17,7 +17,7 @@ var usuarios = [
         cedula: 456789123
     }
 ];
-var contador=3;
+var contador = 3;
 
 app.get('/', function (req, res) {
     res.send('Hello World!')
@@ -69,7 +69,7 @@ app.post('/TecnologiasWeb', function (req, res) {
     console.log(res.headers);
     //res.send('con POST')
 
-})
+});
 
 app.post('/Usuario', function (req, res) {
     //------------------------ Crear
@@ -81,19 +81,57 @@ app.post('/Usuario', function (req, res) {
     if (!req.query.cedula) {
         res.send('No envio la cedula');
     }
-    
-    var nuevoUsuario={
-        id:contador+1,
+
+    var nuevoUsuario = {
+        id: contador + 1,
         nombre: req.query.nombre,
-        cedula:req.query.cedula
+        cedula: req.query.cedula
     }
-    
+
     usuarios.push(nuevoUsuario);
-    contador=contador++;
+    contador = contador++;
     res.json(nuevoUsuario);
-    
-    
+
+
 })
+
+app.put('/Usuario/:idUsuario', function (req, res) {
+    var idActual = req.params.idUsuario;
+
+    var usuarioActualizado = {
+        nombre: req.query.nombre,
+        cedula: req.query.cedula
+    }
+
+    for (var i = 0; i < usuarios.length; i++) {
+        if (idActual == usuarios[i].id) {
+            //responder al usuario
+            usuarios[i].nombre = req.query.nombre;
+            usuarios[i].cedula = req.query.cedula;
+            res.json(usuarios[i]);
+        }
+    }
+    //Si no lo encuentra responda que no existe
+    res.send('No existe usuario');
+
+});
+
+app.delete('/Usuario/:idUsuario', function (req, res) {
+    var idActual = req.params.idUsuario;
+    
+    for (var i = 0; i < usuarios.length; i++) {
+        if (idActual == usuarios[i].id) {
+            //responder al usuario
+            
+            res.send("Usuario eliminado");
+            usuarios.pop(usuario[i]);
+        }
+    }
+    //Si no lo encuentra responda que no existe
+    res.send('No existe usuario');
+
+});
+
 
 app.listen(puerto, function () {
     console.log('Example app listening on port ' + puerto + '!')
