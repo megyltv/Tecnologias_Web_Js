@@ -102,14 +102,51 @@ Se crea un directorio en el cual se va a ubicar la aplicación. Ubicarse en la c
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap1.jpg?raw=true" width="500" height="">
 </p>
 
-
-Se ingresa a la página y se da clic en Descargar.
+Se crea el archivo package.json utilizando el comando npm init.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/03-bootstrap/Informe/imagenes/cap2.jpg?raw=true" width="500" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap2.jpg?raw=true" width="500" height="">
 </p>
 
+En la consola de comando se mostrarán algunos parámetros a ser configurados, como el nombre del archivo principal de la aplicación, la versión, el autor, entre otros. De igual forma se puede ingresar RETURN para que se configure con los parámetros por defecto.
 
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap3.jpg?raw=true" width="500" height="">
+</p>
+
+Se intalla Express en el directorio creado y se guarda la lista de dependencias.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap4.jpg?raw=true" width="500" height="">
+</p>
+
+Se puede instalar el servirdor Express de forma temporal sin añadir la lista de dependecias omitiendo la opcion ``--save``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap5.jpg?raw=true" width="500" height="">
+</p>
+
+### Ejemplo
+Dentro de la carpeta creada anteriormente, se crea un archivo index.js (El nombre depende del especificado anteriormente como nombre del archivo principal).
+
+El archivo contiene un código dado como ejemplo en la página de Express JS. Se modifica el parámetro de la URL y el mensaje de retorno.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap6.jpg?raw=true" width="500" height="">
+</p>
+
+Se guarda el archivo y se ejecuta desde la consola de comandos: ``<node>`` [nombre del archivo].
+- Se imprime el puerto en el cual se está ejecutando
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap7.jpg?raw=true" width="500" height="">
+</p>
+
+- En el navegador web se ingresa al puerto y URL especificado.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap8.jpg?raw=true" width="500" height="">
+</p>
 
 ### Métodos HTTP
 
