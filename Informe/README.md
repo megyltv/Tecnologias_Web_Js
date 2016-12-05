@@ -6,8 +6,8 @@
 <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="150">
 </p>
 
-### Tema : `Introducción a Bootstrap` 
-### Fecha : `2016-11-08`
+### Tema : `NPM` 
+### Fecha : `2016-12-08`
 ### Estudiante : `Megan Lucía Toinga Villafuerte`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `4`
