@@ -149,16 +149,105 @@ Se guarda el archivo y se ejecuta desde la consola de comandos: ``<node>`` [nomb
 </p>
 
 ### Métodos HTTP
+Se define una variable puerto al inicio del documento. Esto permite que en cada método se haga referencia a la variable y no a un valor quemado.
 
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap9.jpg?raw=true" width="500" height="">
+</p>
+
+El método listen permite definir el puerto mediante el cual escuchará el servidor. Se pueden indicar mensajes a imprimir para indicar que se ha establecido la conexión.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap10.jpg?raw=true" width="500" height="">
+</p>
+
+Se pueden configurar los parámetros de la cabecera, que van a hacer recibidos por el servidor usando el comando ``append`` con el método ``post``.
+- Los parámetros req y res, son los metadatos de la cabecera que son enviados y que se obtienen como respuesta.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap11.jpg?raw=true" width="500" height="">
+</p>
+
+- Utilizando la herramienta Postman, se obtienen el resultado siguiente
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap12.jpg?raw=true" width="500" height="">
+</p>
+
+Se crea una arreglo con el cual se ejecutarán los métodos http de ejemplo
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap13.jpg?raw=true" width="500" height="">
+</p>
+
+- **Buscar todos.-** Se utiliza el método ``get``, y se utiliza el parámetro ``res`` con la opción ``json``. Se obtiene como respuesta un archivo json con los datos.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap14.jpg?raw=true" width="500" height="">
+</p>
+
+  Resultado:
+    
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap15.jpg?raw=true" width="500" height="">
+</p>
+
+- **Buscar uno.-** Se utiliza el método ``get`` y en el URL se envía el id del registro a buscar. La búsqueda se realiza con un ``for`` para recorrer el arreglo.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap16.jpg?raw=true" width="500" height="">
+</p>
+
+  Resultado:
+    
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap17.jpg?raw=true" width="500" height="">
+</p>
+
+- **Crear nuevo.-** Se utiliza el método ``post``. Dentro del método se especifica el nuevo usuario y se lo ingresa usando la opción ``push``. Los parámetros se envían usando el parámetro ``req``, con la opción ``query.[nombre variable]``.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap18.jpg?raw=true" width="500" height="">
+</p>
+
+  Resultado:
+    
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap19.jpg?raw=true" width="500" height="">
+</p>
+
+- **Modificar.-** Se utiliza el método ``put`` y se envían el id del registro a modificar. Se recorre el arreglo con ``for`` para buscar el registro.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap20.jpg?raw=true" width="500" height="">
+</p>
+
+  Resultado:
+    
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap21.jpg?raw=true" width="500" height="">
+</p>
+
+- **Elimnar uno** Se utiliza el método ``delete`` y se envían el id del registro a eliminar. Se recorre el arreglo con ``for`` para buscar el registro.
+
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap22.jpg?raw=true" width="500" height="">
+</p>
+
+  Resultado:
+    
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap23.jpg?raw=true" width="500" height="">
+</p>
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
-- .
-- .
-- .
-- .
+- Node js es un servidor el cual permite instalar diferentes paquetes y librerías para utilizarlas en las aplicaciones. Así mismo, da la opción que estas puedan ser creadas por cada usuario y les permite publicarlas para que puedan ser utilizadas por otros usuarios.
+- En el presente laboratorio se instaló Express y se definieron métodos para ejecutar los métodos HTTP.
+- Es necesario conocer el funcionamiento de cada uno de los parámetros usados en las funciones, como el req y res, para hacer el envío y tener la recepción que se requiera.
+- Parámetros, como el puerto, se pueden definir como variables globales. Esto permite no se encuentre quemado el valor en cada método y sea más fácil cambiar el valor en caso de ser necesario.
 
 
 <br>
