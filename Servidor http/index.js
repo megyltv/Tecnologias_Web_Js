@@ -3,24 +3,19 @@ var app = express();
 var puerto = 5050;
 
 
-var fs= require('fs');
+var fs = require('fs');
 
 //function(path, codificacion, funcion){
 //    
 //}
 
-var quePasa='';
-quePasa='Esta por leer el archivo';
+var quePasa = '';
+quePasa = 'Esta por leer el archivo';
 console.log(quePasa);
 
-fs.readFile('../Servidor http/paginas/pagina.html','utf8',
-           function(error, archivoLeido){
-    console.log(error);
-    console.log(archivoLeido);
-    
-});
 
-quePasa='termino de leer el archivo';
+
+quePasa = 'termino de leer el archivo';
 console.log(quePasa);
 
 
@@ -42,8 +37,29 @@ var usuarios = [
 ];
 var contador = 3;
 
+
 app.get('/', function (req, res) {
-    res.send('Hello World!')
+    //Orden de ejecucion al utilizar callback: Se utiliza progra asinc
+    
+    
+    console.log('1 Antes de leer');
+    //Callback
+    fs.readFile('../Servidor http/paginas/pagina.html', 'utf8',
+        function (error, archivoLeido) {
+            console.log('3 '+error);
+            console.log('4 '+archivoLeido);
+        
+        
+            
+        
+        
+            res.send(archivoLeido);
+
+        });
+    
+    
+    
+    console.log('2 Parece que termino de leer');
 })
 
 //------------------ Buscar todos
@@ -135,11 +151,11 @@ app.put('/Usuario/:idUsuario', function (req, res) {
 
 app.delete('/Usuario/:idUsuario', function (req, res) {
     var idActual = req.params.idUsuario;
-    
+
     for (var i = 0; i < usuarios.length; i++) {
         if (idActual == usuarios[i].id) {
             //responder al usuario
-            
+
             res.send("Usuario eliminado");
             usuarios.pop(usuario[i]);
         }
