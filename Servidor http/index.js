@@ -2,6 +2,29 @@ var express = require('express');
 var app = express();
 var puerto = 5050;
 
+
+var fs= require('fs');
+
+//function(path, codificacion, funcion){
+//    
+//}
+
+var quePasa='';
+quePasa='Esta por leer el archivo';
+console.log(quePasa);
+
+fs.readFile('../Servidor http/paginas/pagina.html','utf8',
+           function(error, archivoLeido){
+    console.log(error);
+    console.log(archivoLeido);
+    
+});
+
+quePasa='termino de leer el archivo';
+console.log(quePasa);
+
+
+
 var usuarios = [
     {
         id: 1,
@@ -43,12 +66,6 @@ app.get('/Usuario/:idUsuario', function (req, res) {
     //Si no lo encuentra responda que no existe
     res.send('No existe usuario');
 })
-
-app.listen(puerto, function () {
-    console.log('Example app listening on port ' + puerto + '!')
-})
-
-puerto = 6000;
 
 app.post('/TecnologiasWeb', function (req, res) {
     //    
@@ -131,7 +148,6 @@ app.delete('/Usuario/:idUsuario', function (req, res) {
     res.send('No existe usuario');
 
 });
-
 
 app.listen(puerto, function () {
     console.log('Example app listening on port ' + puerto + '!')
