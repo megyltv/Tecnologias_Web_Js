@@ -40,25 +40,24 @@ var contador = 3;
 
 app.get('/', function (req, res) {
     //Orden de ejecucion al utilizar callback: Se utiliza progra asinc
-    
-    
+    //Varios archivos
+    var todo='';
+
     console.log('1 Antes de leer');
     //Callback
     fs.readFile('../Servidor http/paginas/pagina.html', 'utf8',
-        function (error, archivoLeido) {
-            console.log('3 '+error);
-            console.log('4 '+archivoLeido);
-        
-        
-            
-        
-        
-            res.send(archivoLeido);
+        function (error, archivoLeido1) {
+        todo+=archivoLeido1;
 
+            fs.readFile('../Servidor http/paginas/usuario.html', 'utf8',
+                function (error, archivoLeido2) {
+                    todo+=archivoLeido2;
+                    res.send(todo);
+                });
         });
-    
-    
-    
+
+
+
     console.log('2 Parece que termino de leer');
 })
 
