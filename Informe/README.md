@@ -138,7 +138,7 @@ Para utilizar el paquete instalado, una vez que este instalado, en el archivo se
 
 En la carpeta que se haya instalado el paquete, se crea una carpeta donde este contenida las clases que se descargaron.
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap38.png?raw=true" width="500" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap38.png?raw=true" width="200" height="">
 </p>
 
 Para ejecutar el programa, se abre una consola de comandos y se ejecuta ``node [nombre_aplicacion]``.
@@ -196,7 +196,7 @@ Se guarda el archivo y se ejecuta desde la consola de comandos: ``<node>`` [nomb
 - En el navegador web se ingresa al puerto y URL especificado.
 
 <p align="center">
-    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap8.jpg?raw=true" width="500" height="">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap8.jpg?raw=true" width="400" height="">
 </p>
 
 ### Métodos HTTP
