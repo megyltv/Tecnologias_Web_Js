@@ -95,6 +95,57 @@ Entre algunos de los métodos http, son:
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
+### NPM
+Se abre una consola de comandos y se ejecuta node. En el estado en que se encuentra se pueden ejecutar comandos en un lenguaje, como por ejemplo javascript.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap30.png?raw=true" width="500" height="">
+</p>
+
+Se procede a crear el archivo package.json, con el comando ``npm init``. Se especifica el nombre del archivo, descripcion, usuario, entre otros.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap31.png?raw=true" width="500" height="">
+</p>
+
+Se loguea a npm, con las credenciales que se crearon en el portal de npm.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap32.png?raw=true" width="500" height="">
+</p>
+
+Se ubica en la carpeta en que se encuentra el paquete json, y se procede a publicarla. En esta carpeta se crea un archivo ``app.js``, el cual contendra el codigo a ser utilizado como libreria. 
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap33.png?raw=true" width="500" height="">
+</p>
+
+Una vez publicado puede instalarse el paquete en la carpeta que se vaya a utilizar o de manera global.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap34.png?raw=true" width="500" height="">
+</p>
+
+En caso de realizar cambios en el archivo, se puede llevar un registro de las versiones. Para esto ultimo se modifica el archivo ``json``, la linea de version.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap35.png?raw=true" width="500" height="">
+</p>
+
+Se vuelve a publicar y se modifica indicando el nuevo numero de la version. En el repositorio web de npm, se visualizan los cambios.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap36.png?raw=true" width="500" height="">
+</p>
+
+Para utilizar el paquete instalado, una vez que este instalado, en el archivo se llama con la funcion ``require()``.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap37.png?raw=true" width="500" height="">
+</p>
+
+En la carpeta que se haya instalado el paquete, se crea una carpeta donde este contenida las clases que se descargaron.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap38.png?raw=true" width="500" height="">
+</p>
+
+Para ejecutar el programa, se abre una consola de comandos y se ejecuta ``node [nombre_aplicacion]``.
+<p align="center">
+    <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/08-Nodejs-02/Informe/imagenes/cap39.png?raw=true" width="500" height="">
+</p>
+
 ### Instalación Express JS
 Se crea un directorio en el cual se va a ubicar la aplicación. Ubicarse en la carpeta.
 
