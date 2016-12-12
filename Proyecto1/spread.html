@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spread</title>
+
+    <!-- Jquery Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-abap.min.js" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="varletconst.html">1. var vs let vs const</a></li>
+        <li><a href="iifes.html">2. IIFEs ahora Blocks</a></li>
+        <li><a href="arrow.html">3. Arroy Function</a></li>
+        <li><a href="string.html">4. Strings .includes() .repeat()</a></li>
+        <li><a href="template.html">5. Template literals</a></li>
+        <li><a href="array.html">6. Destructuring arrays</a></li>
+        <li><a href="object.html">7. Destructuring objects</a></li>
+        <li><a href="modules.html">8. Modules export and import</a></li>
+        <li><a href="parameters.html">9. Default Parameters, Rest Parameters, Named Parameters</a></li>
+        <li><a href="spread.html">10. Spread Operator</a></li>
+        <li><a href="classes.html">11. Classes</a></li>
+        <li><a href="promises.html">12. Promises (goodbye callback hell)</a></li>
+        <li><a href="getset.html">13. Getter and Setter in Classes</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <ul class="left">
+                <li><a href="index.html">Deidamia Quishpe y Megan Toinga - Materialize</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Selecciona un Tema de EcmaScript<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s1"></div>
+        <div class="col s3"><a href="parameters.html" class="waves-effect sml waves-light btn"><i class="material-icons left">skip_previous</i>Atrás - Default, Rest,Named Parameters </a></div>
+        <div class="col s4"></div>
+        <div class="col s4"><a href="classes.html" class="waves-effect waves-light btn"><i class="material-icons right">skip_next</i>Siguiente - Classes</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col s2"></div>
+        <div class="col s8 ">
+            <h1 align="center" class="teal lighten-5"> Spread Operator </h1>
+            <h3 align="center" class="teal lighten-5">operadores</h3>
+            
+            <h4>Descripcion</h4>
+            <p>El operador Spread permite manipular los valores de arreglos, pues permite copiar los valores a la expresion que se requiera.</p>
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>1. El operador Spread se expresa (...)</li>
+                <li>2. Este operador permite copiar propiedades de un objeto a otro de una forma sencilla</li>
+                <li>3. Lee un arreglo como si se fuera similar a una expresion para hacer iteraciones</li>
+
+            </ul>
+            
+            <h4>Ejemplo descriptivo</h4>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8   brown lighten-5">
+                    <pre>
+                    <code class="JavaScript">
+                    
+var numeros, cadena, mezcla, result1, result2;
+numeros = [1, 2, 3];
+cadena = "hola";
+mezcla = [42, "mundo"];
+
+// UUtilizando un metodo de concatenacion.
+result1 = numeros.concat(cadena, mezcla);
+
+// Usando Spread (...) como operador para concatenar
+result2 = [...numeros, cadena, ...mezcla];
+
+console.log(d); // 1, 2, 3, "hola", 42, "mundo"
+console.log(e); // 1, 2, 3, "hola", 42, "mundo"
+                </code>
+                </pre>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            
+
+        </div>
+        <div class="col s2"></div>
+    </div>
+
+</body>
+
+</html>

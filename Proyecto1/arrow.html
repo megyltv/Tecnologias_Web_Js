@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arroy Function</title>
+
+    <!-- Jquery Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-abap.min.js" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="varletconst.html">1. var vs let vs const</a></li>
+        <li><a href="iifes.html">2. IIFEs ahora Blocks</a></li>
+        <li><a href="arrow.html">3. Arroy Function</a></li>
+        <li><a href="string.html">4. Strings .includes() .repeat()</a></li>
+        <li><a href="template.html">5. Template literals</a></li>
+        <li><a href="array.html">6. Destructuring arrays</a></li>
+        <li><a href="object.html">7. Destructuring objects</a></li>
+        <li><a href="modules.html">8. Modules export and import</a></li>
+        <li><a href="parameters.html">9. Default Parameters, Rest Parameters, Named Parameters</a></li>
+        <li><a href="spread.html">10. Spread Operator</a></li>
+        <li><a href="classes.html">11. Classes</a></li>
+        <li><a href="promises.html">12. Promises (goodbye callback hell)</a></li>
+        <li><a href="getset.html">13. Getter and Setter in Classes</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <ul class="left">
+                <li><a href="index.html">Deidamia Quishpe y Megan Toinga - Materialize</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Selecciona un Tema de EcmaScript<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s1"></div>
+        <div class="col s3"><a href="iifes.html" class="waves-effect sml waves-light btn"><i class="material-icons left">skip_previous</i>Atrás - IIFEs ahora Blocks </a></div>
+        <div class="col s4"></div>
+        <div class="col s4"><a href="string.html" class="waves-effect waves-light btn"><i class="material-icons right">skip_next</i>Siguiente - Strings .includes() .repeat()</a></div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col s2"></div>
+        <div class="col s8 ">
+            <h1 align="center" class="teal lighten-5"> Arrow Functions </h1>
+            <h4>Ejemplo descriptivo</h4>
+            
+            <h4>Descripcion</h4>
+            <p>La expresión de Arrow function o función flecha (también conocida como función flecha gruesa) dispone de una sintaxis más corta comparada con la expresión de función convencional y vincula contextualmente el valor de <code class="language-markup">this</code>.</p>
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>1. Proveen una sintaxis reducida y <code class="language-markup">this</code> contextual </li>
+                <li>2. Se encuentra formado por dos partes: <code class="language-markup">Identificador => Expresion </code></li>
+                <li>3. Se evita o se salta escribir <code class="language-markup">function</code> y <code class="language-markup">return</code>, y en ciertos casos parentesis, corchetes o llaves</li>
+                <li>4. A diferencia de las funciones <code class="language-markup">function</code>, las <code class="language-markup">Arrow Function</code>  no tienen su propio <code class="language-markup">this</code>, sino que su valor es siempre heredado del alcance en el que se encuentre </li>
+                <li>5. El <code class="language-markup">return</code> se encuentra en la expresion de forma explicita.</li>
+            </ul>
+
+            
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8   brown lighten-5">
+                    <pre>
+                    <code class="JavaScript">
+//Se especifica la function y return
+var suma1 = (function (num1, num2) {
+    return num1 + num2;
+})
+console.log(suma1(5, 7)); //12
+
+//Arroy Function
+//Identificador => Expresion
+var suma2 = ((num1, num2) => num1 + num2);
+console.log(suma2(5, 7)); //12
+
+        
+var arregloNum = [4, 10, 5, 6];
+
+// Con Function
+var arregloNum2 = arregloNum.map(function (v) {
+    return v=v*2; 
+}); // [8,20,10,12]
+console.log(arregloNum2);
+
+//Con Arrow Function
+var arregloNum3 = arregloNum.map(v => v * 2); // [8,20,10,12]
+console.log(arregloNum3);
+               
+                </code>
+                </pre>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        <div class="col s2"></div>
+    </div>
+
+</body>
+
+</html>

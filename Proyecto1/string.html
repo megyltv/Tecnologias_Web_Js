@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+
+    <!-- Jquery Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-abap.min.js" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="varletconst.html">1. var vs let vs const</a></li>
+        <li><a href="iifes.html">2. IIFEs ahora Blocks</a></li>
+        <li><a href="arrow.html">3. Arroy Function</a></li>
+        <li><a href="string.html">4. Strings .includes() .repeat()</a></li>
+        <li><a href="template.html">5. Template literals</a></li>
+        <li><a href="array.html">6. Destructuring arrays</a></li>
+        <li><a href="object.html">7. Destructuring objects</a></li>
+        <li><a href="modules.html">8. Modules export and import</a></li>
+        <li><a href="parameters.html">9. Default Parameters, Rest Parameters, Named Parameters</a></li>
+        <li><a href="spread.html">10. Spread Operator</a></li>
+        <li><a href="classes.html">11. Classes</a></li>
+        <li><a href="promises.html">12. Promises (goodbye callback hell)</a></li>
+        <li><a href="getset.html">13. Getter and Setter in Classes</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <ul class="left">
+                <li><a href="index.html">Deidamia Quishpe y Megan Toinga - Materialize</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Selecciona un Tema de EcmaScript<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s1"></div>
+        <div class="col s3"><a href="arrow.html" class="waves-effect sml waves-light btn"><i class="material-icons left">skip_previous</i>Atrás - Arrow Functions </a></div>
+        <div class="col s4"></div>
+        <div class="col s4"><a href="template.html" class="waves-effect waves-light btn"><i class="material-icons right">skip_next</i>Siguiente - Template literals</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col s2"></div>
+        <div class="col s8 ">
+            <h1 align="center" class="teal lighten-5"> Strings .includes() .repeat() </h1>
+            <h3 align="center" class="teal lighten-5">operaciones strings</h3>
+            <h4>Descripcion</h4>
+            <p>Las opciones de la libreria estandar de ES6 ha incrementado y, dentro de esos cambios se encuentran los nuevos metodos de string, como <code class="language-markup">.include()</code> y <code class="language-markup">.repeat()</code>.</p>
+            <h4>Peculiaridades</h4>
+            <ul>
+                <li>1. La libreria <code class="language-markup">.include()</code> permite comprobar que una cadena dentra elementos.</li>
+                <li>2. <code class="language-markup">.include()</code> retorna un bool como valor de retorno.</li>
+                <li>3. El metodo <code class="language-markup">.include()</code> permite verificar que una cadena esta contenida en otra.</li>
+                <li>4. Permite concatenar un numero indicado de veces, la misma cadena.</li>
+                <li>5. Estos metodos son sensibles al teclado</li>
+            </ul>
+
+           <h4>Ejemplo descriptivo</h4>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <p>.include()</p>
+                <div class="col-sm-8   brown lighten-5">
+                    <pre>
+                    <code class="JavaScript">
+var str = 'Hola mundo, frase ser o no ser, esa es la pregunta.';
+
+//.include(Substring a buscar)
+console.log(str.includes('Hola')); // true - consta en la cadena
+console.log(str.includes('es la pregunta')); // true - consta en la cadena
+console.log(str.includes('hola Mundo')); // false - Compara mayusculas y minusculas
+console.log(str.includes('SER', 1)); // false - Compara mayusculas y minusculas
+console.log(str.includes('Pregunta')); // false - Compara mayusculas y minusculas
+                </code>
+                </pre>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <p>.repeat()</p>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8   brown lighten-5">
+                    <pre>
+                    <code class="JavaScript">
+//Sin el metodo de repeat, se concatena con un a funcion de lazo
+function repeat(string, numero) {
+   var strings = [];
+   while (strings.length 'menor' numero) {
+         strings.push(string);
+   }
+   return strings.join('');
+}
+        
+console.log(repeat('mundo',3));
+
+// String.repeat(numero de repeticiones)
+//valorString.repeat();
+console.log('hola'.repeat(3)); // holaholahola
+        
+//Se puede definir una variable y a partir de ella llamar a la funcion
+var cadena='mundo';
+console.log(cadena.repeat(3)); // mundomundomundo
+                </code>
+                </pre>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+        </div>
+        <div class="col s2"></div>
+    </div>
+
+</body>
+
+</html>
