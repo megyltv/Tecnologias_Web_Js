@@ -6,7 +6,7 @@
 <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="150">
 </p>
 
-### Tema : `Introducción a CSS` 
+### Tema : `Introducción a SailsJS` 
 ### Fecha : `2017-01-05`
 ### Estudiante : `Megan Lucía Toinga Villafuerte`
 ### Profesor : `Tania Calle - Adrian Eguez`
@@ -54,7 +54,7 @@ Sails tiene como puerto de defecto el 1337. Y se encuentra conformado por las ca
 <a href="#cabecera">A la cabecera</a>
 
 <p align="center">
-<img src="http://blogldc.s3.amazonaws.com/wp-content/uploads/2015/07/2015_07_17_LearnCSS.jpg" width="300">
+<img src="https://camo.githubusercontent.com/9e49073459ed4e0e2687b80eaf515d87b0da4a6b/687474703a2f2f62616c64657264617368792e6769746875622e696f2f7361696c732f696d616765732f6c6f676f2e706e67" width="300">
 </p>
 
 <br>
@@ -63,10 +63,15 @@ Sails tiene como puerto de defecto el 1337. Y se encuentra conformado por las ca
 ### Grunt
 Grunt y los plugins de Grunt son instalados y administrados via npm. Cuando se ejecuta grunt, este busca por ``require()`` que se encuentre instalado localmente. Se encuentra conformado por un grupo de tareas que permite crear plugins propios y scripts que extiendan la funcionalidad básica. (Fuente: [envatotuts+](https://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856))
 
+<p align="center">
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2013/10/grund-js-opt.png" width="300">
+</p>
+
+
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
-### CSS
+### SailsJS
 
 <p align="center">
     <img src="https://github.com/megyltv/Tecnologias_Web_Js/blob/10-Sails-01/Informe/imagenes/cap1.png?raw=true" width="500" height="">
