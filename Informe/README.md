@@ -1,4 +1,4 @@
-# Introducción a la Web
+# Introducción a SailsJS
 
 ### Materia : `Tecnologías Web con JavaScript`
 
