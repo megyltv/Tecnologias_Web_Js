@@ -1,101 +1,90 @@
-# Repositorio de Tecnologías Web
+## Comandos Importantes
 
-Este repositorio forma parte del [curso de tecnologías web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
+### Instalar sailsjs
 
-## Enfasis de Texto
+Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
 
-* Para nosotros utilizar un texto en **negrita** se utilizan dos "**" (asterisco).
-* Para nosotros utilizar un texto en *cursiva* vamos a utilizar un "*" (asterisco).
-* Para nosotros ~~tachar un texto~~ necesitas usar "~".
+´´´
+> npm install -g sails
+´´´
 
-## Listas Ordenadas
+El -g nos deja utilizarlo globalmente.
 
-1. El número
-2. De las listas
-  * Lista no ordenada 1 (dos espacios antes del asterisco).
-  * Lista no ordenada 2.
-1. Ordenadas
-  1. Estas si es una lista ordenada (con dos espacios " " antes de los números).
-  2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números).
-4. No importa
+### Crear un proyecto en Sailsjs
 
-## Links
-Para utilizar un [Link](https://github.com/megyltv/Tecnologias_Web_Js) debemos encerrar el texto en [] seguido del URL en ().
+´´´
+> sails new NombreProyecto
+´´´
 
-## Imagenes
+### Levantar el servidor
 
-Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brackets [] despues del caracter de exclamación ! y el link de la imagen entre paréntesis() 
-
-![Imagen de JS en color amarillo](http://javascript.tutorialhorizon.com/files/2015/07/javascript.png "Javascript")
-
-## Formateo de Codigo
+´´´
+> sails lift
+´´´
 
 
-Para nosotros utilizar el formateo de código dentro de texto plano debemos de utilizar el caracter `Tilde invertida`.
+´´´
+> node app.js
+´´´
 
-Para utilizar el formateo de código dentro de un bloque de texto plano necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programación a usarse para el formateo del código , justo después de las 3 `Tildes invertidas`.
+El sails les pide opciones si no estan definidas, las opciones son:
 
-* Bloque de código en javacript
+- 1: SAFE MODE no se va a alterar la base de datos
+- 2: ALTER MODE se va a alterar la base de datos si nosotros hicimos cambios en los modelos por ejemplo
+- 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos
 
-```javascript
-var mensaje = "Hola mundo";
-```
- * Bloque de código de una `consola`
+## Servidor Web de Sailsjs
 
-```
-> apt-get update paquete
->
-```
+El servidor web de sails se encuentra localizado en la carpeta **assets**
 
-* Bloque de HTML
-```
-<html>
-<\html>
-```
 
-##  Tablas
+## Generar Controladores Sailsjs
 
-Para usar tablas necesitamos definir las filas con |
+´´´
+> sails generate controller NombreControlador
+´´´
 
-Columna 1 | Columna 2 | Columna 3 | Columna 4
---- | --- | --- | ---
-Valor 1 C1 | Valor 1 C2 | Valor 1 C3 | Valor 1 C4
-Valor 2 C1 | Valor 2 C2 | Valor 2 C3 | Valor 2 C4
-Valor 3 C1 | Valor 3 C2 | Valor 3 C3 | Valor 3 C4
-Valor 4 C1 | Valor 4 C2 | Valor 4 C3 | Valor 4 C4
+## Generar Modelos en Sailsjs
 
-## Citas (no de humanos sino de texto)
+´´´
+> sails generate model NombreModelo
+´´´
 
-Para escribir varias líneas de citas solamentes las concatenamos en la siguiente línea utilizando mayor que ">":
+## Generar APIs en Sailsjs
 
-> Yo solo se, que nada se. NO OLVIDARSE EL SALTO DE LÍNEA.
+´´´
+> sails generate api NombreAPI
+´´´
 
-> Un filósofo random.
+Un Api es la fusión de un **Controlador** y de un **Modelo**.
 
-Sino utilizados una cita en una línea con mayor que `>`: 
+# API REST
 
-> Y si me matas, ¿Me muero?
+## Modelo Usuario
 
-## Saltos de línea
+### Crear Usuarios
 
-Para utilizar un salto de línea debemos de utilziar más de 3 veces el caracter `-`.
+URL:
 
----
+´http://localhost:1337/Usuario´
 
-O el caracter `*`.
+Metodo HTTP:
 
-***
+´POST´
 
-O el caracter `_`
+Datos:
 
-___
 
-> Otro quote 
+´´´javascript
+{
+    nombre:'Adrian',
+    apellido:'Eguez',
+    correo:'adrian.eguez@epn.edu.ec'
+}
+´´´
 
-## Videos de youtube
 
-Es uso puro de HTML dentro de markdown:
 
-<a href="https://www.youtube.com/watch?v=VsibqXd-rW0
-" target="_blank"><img src="http://javascript.tutorialhorizon.com/files/2015/07/javascript.png" 
-alt="Video" width="240" height="180" border="10" /></a>
+
+
+
