@@ -7,20 +7,21 @@
 
 module.exports = {
 
-  attributes: {
-	  nombre:{
-		  type:'string',
-		  enum:['Bulldog','Chihuahua','Pitbull'], //Validando nombre
-		  required:true //validando uno de cada uno
-	  },
-	  //mascotas es el nombre en plural del modelo
-	  mascotas:{
-		  //Collection - Nombre del Modelo en Sails
-		  collection:'Mascota', //Conexion a la relacion, 
-		  //Via: Campo por el cual se va a relacionar - FOREIGN KEY
-		  via:'idRaza'
-	  }
+    attributes: {
 
-  }
+        nombre: {
+            type: 'string',
+            enum: ['Bulldog', 'Chihuahua', 'Pitbull'],
+            required: true
+        },
+        //Mascotas -> es el nombre en plural del modelo a relacionarse
+        mascotas: {
+            // Collection -> Nombre del Modelo en Sails
+            collection: 'Mascota',
+            // Via-> Es el campo por el cual vamos a relacionar FOREIGN KEY
+            via: 'idRaza'
+        }
+
+    }
+
 };
-

@@ -6,46 +6,75 @@
  */
 
 
+
 module.exports = {
-	crearUsuario: function (req, res) {
-		//Se accede asi: /Usuario/crearUsuario
 
-		//Guardando todos los parametros en la variable parametros
-		var parametros = req.allParams()
-		console.log(parametros);
+    crearUsuario: function (req, res) {
+        //   Se accede asi: /Usuario/crearUsuario
 
-		if (req.method == 'POST') {
-			if (parametros.nombres && parametros.apellidos) {
-				//creo usuario
-				Usuario.create({
-					nombres: parametros.nombres,
-					apellidos: parametros.apellidos,
-					correo: parametros.correo
-				}).exec(function (err, usuarioCreado) {
+        // Guardando todos los parametros en la variable parametros
 
-					if (err) return res.serverError()
+        var parametros = req.allParams();
+        console.log(parametros);
 
-					sails.log.info(usuarioCreado);
-					return res.ok(usuarioCreado);
-				});
+        if (req.method == 'POST') {
+            if (parametros.nombres && parametros.apellidos) {
+                //creo el usuario
+                Usuario.create({
+                    nombres: parametros.nombres,
+                    apellidos: parametros.apellidos,
+                    correo: parametros.correo
+                }).exec(function (error, usuarioCreado) {
+                    if (error) return res.serverError()
+                    sails.log.info(usuarioCreado);
+                    return res.ok(usuarioCreado);
+                });
+            } else {
+                // bad Request
+                return res.badRequest('No envia todos los parametros');
+            }
+        } else {
+            return res.badRequest('Metodo invalido');
+        }
 
-			} else {
-				//bad request
-				return res.badRequest('No envia todos los parametros');
-			}
+    },
+    crearUsuarioForm: function (req, res) {
 
-		}else{
-			return res.badRequest('Metodo Invalido');
-		}
+        var parametros = req.allParams();
+        console.log(parametros);
+
+        if (req.method == 'POST') {
+            if (parametros.nombres && parametros.apellidos) {
+                //creo el usuario
+                Usuario.create({
+                    nombres: parametros.nombres,
+                    apellidos: parametros.apellidos,
+                    correo: parametros.correo
+                }).exec(function (error, usuarioCreado) {
+                    if (error) return res.serverError()
+                    sails.log.info(usuarioCreado);
+
+                    return res.view('vistas/home', {
+                        titulo: 'Inicio',
+                        numero: 1,
+                        mauricio: {
+                            nombre: 'Mauricio',
+                            cedula: 1718137159
+                        }
+                    });
+                });
 
 
-		//		/Usuario/crearUsuario?nombres=Megan&apellidos=Toinga
-		//		post
-		//		
-		//		correo:megann.toinga@epn.edu.ec
 
 
-	}
+            } else {
+                // bad Request
+                return res.badRequest('No envia todos los parametros');
+            }
+        } else {
+            return res.badRequest('Metodo invalido');
+        }
 
+    }
 
 };
