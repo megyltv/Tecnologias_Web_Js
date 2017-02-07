@@ -9,49 +9,58 @@
 
 module.exports = {
 
-    crearUsuario: function (req, res) {
-		if(req.method=="POST"){
-			
-		}else{
-			return res.view('vistas/Error',{
-			error:{
-				descripcion:"Usted esta usando erroneamente el uso de metodos HTTP",
-				rawError:"HTTP Invalido",
-				url:"/crearUsuario"
+	crearUsuario: function (req, res) {
+		if (req.method == "POST") {
+			var parametros = req.allParams();
+			if (parametros.nombres && parametros.apellidos) {
+				
+				var usuarioCrear={
+					nombres:parametros.nombres,
+					apellidos: parametros.apellidos,
+					correo: parametros.correo
+				}
+				
+
+				if (parametros.correo == "") {
+					delete usuarioCrear.correo;
+				}
+
+				//Metodos con el modelo
+				Usuario.create(usuarioCrear).exec(function (err, usuarioCreado) {
+
+					if (err) {
+						return res.view('vistas/Error', {
+							error: {
+								descripcion: "Fallo al crear usuario",
+								rawError: err,
+								url: "/crearUsuario"
+							}
+						});
+					}
+
+					return res.view("vistas/Usuario/crearUsuario");
+
+
+				}
+
+			)} else {
+				return res.view('vistas/Error', {
+					error: {
+						descripcion: "Llene todos los parametros, apellidos y nombres",
+						rawError: "Fallo en envio de parametros",
+						url: "/crearUsuario"
+					}
+				})
 			}
-		})
+
+		} else {
+			return res.view('vistas/Error', {
+				error: {
+					descripcion: "Usted en el uso del Metodo HTTP",
+					rawError: "HTTP Invalido",
+					url: "/crearUsuario"
+				}
+			})
 		}
-		
-		
-		
-		
-        //   Se accede asi: /Usuario/crearUsuario
-
-        // Guardando todos los parametros en la variable parametros
-
-        var parametros = req.allParams();
-        console.log(parametros);
-
-        if (req.method == 'POST') {
-            if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
-                Usuario.create({
-                    nombres: parametros.nombres,
-                    apellidos: parametros.apellidos,
-                    correo: parametros.correo
-                }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-                    return res.ok(usuarioCreado);
-                });
-            } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
-            }
-        } else {
-            return res.badRequest('Metodo invalido');
-        }
-
-    },
-    
+	}
 };
