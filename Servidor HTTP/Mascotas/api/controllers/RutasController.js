@@ -23,7 +23,7 @@ module.exports = {
     },
     crearUsuario:function(req,res){
         
-        return res.view('vistas/crearUsuario')
+        return res.view('vistas/crearUsuario');
         
     }
     
