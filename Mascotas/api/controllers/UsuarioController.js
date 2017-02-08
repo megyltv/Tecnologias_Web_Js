@@ -10,57 +10,82 @@
 module.exports = {
 
 	crearUsuario: function (req, res) {
+
 		if (req.method == "POST") {
+
 			var parametros = req.allParams();
+
 			if (parametros.nombres && parametros.apellidos) {
-				
-				var usuarioCrear={
-					nombres:parametros.nombres,
+
+				var usuarioCrear = {
+					nombres: parametros.nombres,
 					apellidos: parametros.apellidos,
 					correo: parametros.correo
 				}
-				
 
-				if (parametros.correo == "") {
-					delete usuarioCrear.correo;
+				if (usuarioCrear.correo == "") {
+					delete usuarioCrear.correo
 				}
 
-				//Metodos con el modelo
 				Usuario.create(usuarioCrear).exec(function (err, usuarioCreado) {
 
 					if (err) {
 						return res.view('vistas/Error', {
 							error: {
-								descripcion: "Fallo al crear usuario",
+								desripcion: "Fallo al crear el Usuario",
 								rawError: err,
-								url: "/crearUsuario"
+								url: "/CrearUsuario"
 							}
+
 						});
 					}
 
-					return res.view("vistas/Usuario/crearUsuario");
+					Usuario.find()
+						.exec(function (errorIndefinido, usuariosEncontrados) {
+
+							if (errorIndefinido) {
+								res.view('vistas/Error', {
+									error: {
+										desripcion: "Hubo un problema cargando los Usuarios",
+										rawError: errorIndefinido,
+										url: "/ListarUsuarios"
+									}
+								});
+							}
+
+							res.view('vistas/Usuario/ListarUsuarios', {
+								usuarios: usuariosEncontrados
+							});
+						})
+
+				})
 
 
-				}
+			} else {
 
-			)} else {
 				return res.view('vistas/Error', {
 					error: {
-						descripcion: "Llene todos los parametros, apellidos y nombres",
+						desripcion: "Llena todos los parametros, apellidos y nombres",
 						rawError: "Fallo en envio de parametros",
-						url: "/crearUsuario"
+						url: "/CrearUsuario"
 					}
-				})
+
+				});
+
 			}
 
+
 		} else {
+
 			return res.view('vistas/Error', {
 				error: {
-					descripcion: "Usted en el uso del Metodo HTTP",
+					desripcion: "Error en el uso del Metodo HTTP",
 					rawError: "HTTP Invalido",
-					url: "/crearUsuario"
+					url: "/CrearUsuario"
 				}
-			})
+			});
+
 		}
+
 	}
 };
