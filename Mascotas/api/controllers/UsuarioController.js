@@ -91,130 +91,135 @@ module.exports = {
 
 	BorrarUsuario: function (req, res) {
 
-        var parametros = req.allParams();
-
-        if (parametros.id) {
-
-            Usuario.destroy({
-                id: parametros.id
-            }).exec(function (errorInesperado, UsuarioRemovido) {
-                if (errorInesperado) {
-                    return res.view('vistas/Error', {
-                        error: {
-                            desripcion: "Tuvimos un Error Inesperado",
-                            rawError: errorInesperado,
-                            url: "/ListarUsuarios"
-                        }
-                    });
-                }
-                Usuario.find()
-                    .exec(function (errorIndefinido, usuariosEncontrados) {
-
-                        if (errorIndefinido) {
-                            res.view('vistas/Error', {
-                                error: {
-                                    desripcion: "Hubo un problema cargando los Usuarios",
-                                    rawError: errorIndefinido,
-                                    url: "/ListarUsuarios"
-                                }
-                            });
-                        }
-
-                        res.view('vistas/Usuario/ListarUsuarios', {
-                            usuarios: usuariosEncontrados
-                        });
-                    })
-            })
-
-        } else {
-            return res.view('vistas/Error', {
-                error: {
-                    desripcion: "Necesitamos el ID para borrar al Usuario",
-                    rawError: "No envia ID",
-                    url: "/ListarUsuarios"
-                }
-            });
-        }
-    },
-
-	editarUsuario: function(req,res){
 		var parametros = req.allParams();
 
-        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
-		
-			var usuarioEditar={
+		if (parametros.id) {
+
+			Usuario.destroy({
+				id: parametros.id
+			}).exec(function (errorInesperado, UsuarioRemovido) {
+				if (errorInesperado) {
+					return res.view('vistas/Error', {
+						error: {
+							desripcion: "Tuvimos un Error Inesperado",
+							rawError: errorInesperado,
+							url: "/ListarUsuarios"
+						}
+					});
+				}
+				Usuario.find()
+					.exec(function (errorIndefinido, usuariosEncontrados) {
+
+						if (errorIndefinido) {
+							res.view('vistas/Error', {
+								error: {
+									desripcion: "Hubo un problema cargando los Usuarios",
+									rawError: errorIndefinido,
+									url: "/ListarUsuarios"
+								}
+							});
+						}
+
+						res.view('vistas/Usuario/ListarUsuarios', {
+							usuarios: usuariosEncontrados
+						});
+					})
+			})
+
+		} else {
+			return res.view('vistas/Error', {
+				error: {
+					desripcion: "Necesitamos el ID para borrar al Usuario",
+					rawError: "No envia ID",
+					url: "/ListarUsuarios"
+				}
+			});
+		}
+	},
+
+	editarUsuario: function (req, res) {
+		var parametros = req.allParams();
+
+		if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+
+			var usuarioEditar = {
 				nombres: parametros.nombres,
 				apellidos: parametros.apellidos,
-				correo:parametros.correo
+				correo: parametros.correo,
+				password: parametros.password
 			}
-		
-			if(usuarioEditar.nombres=""){
+
+			if (usuarioEditar.nombres = "") {
 				delete usuarioEditar.nombres;
 			}
-			if(usuarioEditar.apellidos=""){
+			if (usuarioEditar.apellidos = "") {
 				delete usuarioEditar.apellidos;
 			}
-			if(usuarioEditar.correo=""){
+			if (usuarioEditar.correo = "") {
 				delete usuarioEditar.correo;
+			}
+			if (usuarioEditar.password = "") {
+				delete usuarioEditar.password;
 			}
 			
 
-            Usuario.update({
-                id: parametros.idUsuario
-            }, usuarioEditar).exec(function (errorInesperado, UsuarioRemovido) {
-                if (errorInesperado) {
-                    return res.view('vistas/Error', {
-                        error: {
-                            desripcion: "Tuvimos un Error Inesperado",
-                            rawError: errorInesperado,
-                            url: "/ListarUsuarios"
-                        }
-                    });
-                }
-                Usuario.find()
-                    .exec(function (errorIndefinido, usuariosEncontrados) {
 
-                        if (errorIndefinido) {
-                            res.view('vistas/Error', {
-                                error: {
-                                    desripcion: "Hubo un problema cargando los Usuarios",
-                                    rawError: errorIndefinido,
-                                    url: "/ListarUsuarios"
-                                }
-                            });
-                        }
+			Usuario.update({
+				id: parametros.idUsuario
+			}, usuarioEditar).exec(function (errorInesperado, UsuarioRemovido) {
+				if (errorInesperado) {
+					return res.view('vistas/Error', {
+						error: {
+							desripcion: "Tuvimos un Error Inesperado",
+							rawError: errorInesperado,
+							url: "/ListarUsuarios"
+						}
+					});
+				}
+				Usuario.find()
+					.exec(function (errorIndefinido, usuariosEncontrados) {
 
-                        res.view('vistas/Usuario/ListarUsuarios', {
-                            usuarios: usuariosEncontrados
-                        });
-                    })
-            })
+						if (errorIndefinido) {
+							res.view('vistas/Error', {
+								error: {
+									desripcion: "Hubo un problema cargando los Usuarios",
+									rawError: errorIndefinido,
+									url: "/ListarUsuarios"
+								}
+							});
+						}
 
-        } else {
-            return res.view('vistas/Error', {
-                error: {
-                    desripcion: "Necesitamos que envies el ID y nombres, apellidos o correo",
-                    rawError: "No envia ID",
-                    url: "/ListarUsuarios"
-                }
-            });
-        }
-		
-		Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
-			if(errorIndefinido){
+						res.view('vistas/Usuario/ListarUsuarios', {
+							usuarios: usuariosEncontrados
+						});
+					})
+			})
+
+		} else {
+			return res.view('vistas/Error', {
+				error: {
+					desripcion: "Necesitamos que envies el ID y nombres, apellidos o correo",
+					rawError: "No envia ID",
+					url: "/ListarUsuarios"
+				}
+			});
+		}
+
+		Usuario.find().exec(function (errorIndefinido, usuariosEncontrados) {
+			if (errorIndefinido) {
 				return res.view('vistas/Error', {
-                error: {
-                    desripcion: "Hubo un error cargando los usuarios",
-                    rawError: errorIndefinido,
-                    url: "/ListarUsuarios"
-                }
-            });
+					error: {
+						desripcion: "Hubo un error cargando los usuarios",
+						rawError: errorIndefinido,
+						url: "/ListarUsuarios"
+					}
+				});
 			}
-			res.view("vistas/Usuario/editarUsuario",{
-				usuarios:usuariosEncontrados
+			res.view("vistas/Usuario/editarUsuario", {
+				usuarios: usuariosEncontrados
 			})
 		})
-		
+
 	}
 
 
