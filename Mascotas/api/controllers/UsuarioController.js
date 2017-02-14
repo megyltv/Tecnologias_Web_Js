@@ -140,7 +140,8 @@ module.exports = {
 	editarUsuario: function(req,res){
 		var parametros = req.allParams();
 
-        if (parametros.id && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+		
 			var usuarioEditar={
 				nombres: parametros.nombres,
 				apellidos: parametros.apellidos,
@@ -159,7 +160,7 @@ module.exports = {
 			
 
             Usuario.update({
-                id: parametros.id
+                id: parametros.idUsuario
             }, usuarioEditar).exec(function (errorInesperado, UsuarioRemovido) {
                 if (errorInesperado) {
                     return res.view('vistas/Error', {
@@ -198,6 +199,22 @@ module.exports = {
                 }
             });
         }
+		
+		Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
+			if(errorIndefinido){
+				return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Hubo un error cargando los usuarios",
+                    rawError: errorIndefinido,
+                    url: "/ListarUsuarios"
+                }
+            });
+			}
+			res.view("vistas/Usuario/editarUsuario",{
+				usuarios:usuariosEncontrados
+			})
+		})
+		
 	}
 
 

@@ -17,6 +17,55 @@ module.exports = {
 		return res.view('vistas/Usuario/crearUsuario')
 
 	},
+
+	editarUsuario: function (req, res) {
+		var parametros = req.allParams();
+
+		if (parametros.id) {
+			Usuario.findOne({
+				id: parametros.id
+			}).exec(function (errorInesperado, UsuarioEncontrado) {
+
+				if (errorInesperado) {
+					return res.view('vistas/Error', {
+						error: {
+							descripcion: "Error Inesperado",
+							rawError: errorInesperado,
+							url: "/ListarUsuarios"
+						}
+					})
+				}
+
+				if (UsuarioEncontrado) {
+					res.view("vistas/Usuario/editarUsuario",{
+						usuarioAEditar:UsuarioEncontrado
+					});
+
+				} else {
+					return res.view('vistas/Error', {
+						error: {
+							descripcion: "El usuario con id: "+parametros.id+" no existe",
+							rawError: "No existe el usuario",
+							url: "/ListarUsuarios"
+						}
+					})
+				}
+
+			})
+
+		} else {
+			return res.view('vistas/Error', {
+				error: {
+					descripcion: "No ha enviado el parametro ID",
+					rawError: "Faltan Parametros",
+					url: "/ListarUsuarios"
+				}
+			});
+		}
+
+		return res.view('vistas/Usuario/editarUsuario')
+	},
+
 	error: function (req, res) {
 
 		return res.view('vistas/Error', {
@@ -49,6 +98,8 @@ module.exports = {
 
 			})
 
-	}
+	},
+
+
 
 };
