@@ -220,8 +220,11 @@ module.exports = {
 			})
 		})
 
-	}
+	},
 
-
+	
+	editarMascota: function(req,res){
+	
+}
 
 };
