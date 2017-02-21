@@ -110,46 +110,47 @@ module.exports = {
 	},
 	
 	editarRaza: function(req,res){
-		var parametros= req.allParams();
-		
-		if(parametros.id){
-			Raza.findOne({
-				id:parametros.id
-			}).exec(function(err, RazaEncontrada){
-				if(err){
-					return res.view('vistas/Error', {
+		var parametros = req.allParams();
+
+        if (parametros.id) {
+
+            Raza.findOne({
+                id: parametros.id
+            }).exec(function (errorInesperado, RazaEncontrado) {
+                if (errorInesperado) {
+                    return res.view('vistas/Error', {
                         error: {
                             desripcion: "Error Inesperado",
-                            rawError: err,
+                            rawError: errorInesperado,
                             url: "/ListarRazas"
                         }
                     });
-				}
-				if(RazaEncontrada){
-					return res.view('vistas/Raza/editarRaza',{
-						razaAEditar:RazaEncontrada
-					});
-				}else{
-					return res.view('vistas/Error', {
+                }
+                if(RazaEncontrado){
+                     return res.view("vistas/Raza/editarRaza",{
+                         razaAEditar:RazaEncontrado
+                     });
+                }else{
+                    return res.view('vistas/Error', {
                         error: {
                             desripcion: "La raza con id: "+parametros.id+" no existe.",
                             rawError: "No existe la raza",
                             url: "/ListarRazas"
                         }
                     });
-				}
-				
-			})
-			
-		}else{
-			return res.view('vistas/Error', {
+                }
+            })
+        } else {
+
+            return res.view('vistas/Error', {
                 error: {
                     desripcion: "No ha enviado el parametro ID",
                     rawError: "Faltan Parametros",
                     url: "/ListarRazas"
                 }
             });
-		}
+
+        }
 	},
 	
 	listarRazas:function(req,res){
@@ -163,7 +164,7 @@ module.exports = {
 						}
 					}); 
 			}
-			res.view('vistas/Razas/listarRazas',{
+			res.view('vistas/Raza/listarRazas',{
 				razas:razasEncontradas
 			})
 		})

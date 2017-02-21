@@ -1,0 +1,44 @@
+
+	<h1> Editar Mascota - <%= mascotaAEditar.nombre %></h1>
+
+
+
+	<div class="row">
+		<div class="col-sm-5">
+			<form action="/Usuario/EditarMascota" method="post">
+
+			<div class="form-group">
+				<label for="exampleInputEmail1">Nombre</label>
+				<input type="text" class="form-control" placeholder="Ingrese el nombre" name="nombre" value="<%= mascotaAEditar.nombre %>">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputEmail1">Fecha de Nacimiento</label>
+				<input type="text" class="form-control" placeholder="Ingrese la fecha de nacimiento" name="fechaNacimiento" value="<%= mascotaAEditar.fechaNacimiento%>">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputEmail1">País de Nacimiento</label>
+				<input type="email" class="form-control" placeholder="Ingrese pais de nacimiento" name="paisNacimiento" value="<%= mascotaAEditar.paisNacimiento %>">
+			</div>
+
+			<input type="hidden" name="idMascota" value="<%= mascotaAEditar.idMascota %>">
+			<input type="hidden" name="idRaza" value="<%= mascotaAEditar.idRaza %>">
+
+
+			<button type="submit" class="btn btn-success btn-block">Editar Mascota =)</button>
+		</form>
+
+		</div>
+		
+		<div class="col-sm-2"></div>
+		
+		<div class="col-sm-5">
+			<h2><%= mascotaAEditar.nombre %></h2>
+			<h4><%= mascotaAEditar.fechaNacimiento %></h4>
+			<h4><%= mascotaAEditar.fechaNacimiento %></h4>
+			<p><%= mascotaAEditar.idRaza %></p>
+			
+		</div>
+		
+	</div>

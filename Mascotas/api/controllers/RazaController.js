@@ -79,7 +79,7 @@ module.exports = {
 						}
 					});
 				}
-				Raza.find().exec(function(err, razasEncontradas) {
+				Raza.find().exec(function (err, razasEncontradas) {
 					if (err) {
 						res.view('vistas/Error', {
 							error: {
@@ -89,8 +89,8 @@ module.exports = {
 							}
 						});
 					}
-					res.view('vistas/Raza/ListarRazas',{
-						razas:razasEncontradas
+					res.view('vistas/Raza/ListarRazas', {
+						razas: razasEncontradas
 					});
 				})
 			})
@@ -105,142 +105,80 @@ module.exports = {
 				}
 			});
 		}
-		
+
+	},
+
+	editarRaza: function (req, res) {
+		var parametros = req.allParams();
+
+		if (parametros.idRaza && parametros.nombre) {
+
+			var razaEditar = {
+				nombre: parametros.nombre,
+			}
+
+			if (razaEditar.nombre = "") {
+				delete razaEditar.nombre;
+			}			
+
+
+			Raza.update({
+				id: parametros.idRaza
+			}, razaEditar).exec(function (errorInesperado, RazaRemovido) {
+				if (errorInesperado) {
+					return res.view('vistas/Error', {
+						error: {
+							desripcion: "Tuvimos un Error Inesperado",
+							rawError: errorInesperado,
+							url: "/ListarRazas"
+						}
+					});
+				}
+				Raza.find()
+					.exec(function (errorIndefinido, razasEncontrados) {
+
+						if (errorIndefinido) {
+							res.view('vistas/Error', {
+								error: {
+									desripcion: "Hubo un problema cargando las Razas",
+									rawError: errorIndefinido,
+									url: "/ListarRazas"
+								}
+							});
+						}
+
+						res.view('vistas/Raza/ListarRazas', {
+							razas: razasEncontrados
+						});
+					})
+			})
+
+		} else {
+			return res.view('vistas/Error', {
+				error: {
+					desripcion: "Necesitamos que envies el ID y nombre",
+					rawError: "No envia ID",
+					url: "/ListarRazas"
+				}
+			});
+		}
+
+		Raza.find().exec(function (errorIndefinido, razasEncontrados) {
+			if (errorIndefinido) {
+				return res.view('vistas/Error', {
+					error: {
+						desripcion: "Hubo un error cargando las razas",
+						rawError: errorIndefinido,
+						url: "/ListarRazas"
+					}
+				});
+			}
+			res.view("vistas/Raza/editarRaza", {
+				razas: razasEncontrados
+			})
+		})
 	}
 
-
-
-	//
-	//				
-	//	BorrarUsuario: function (req, res) {
-	//	//		var parametros = req.allParams();
-	//	//		if (parametros.id) {
-	//			Usuario.destroy({
-	//				id: parametros.id
-	//			}).exec(function (errorInesperado, UsuarioRemovido) {
-	//				if (errorInesperado) {
-	//					return res.view('vistas/Error', {
-	//						error: {
-	//							desripcion: "Tuvimos un Error Inesperado",
-	//							rawError: errorInesperado,
-	//							url: "/ListarUsuarios"
-	//						}
-	//					});
-	//				}
-	//				Usuario.find()
-	//					.exec(function (errorIndefinido, usuariosEncontrados) {
-	//
-	//						if (errorIndefinido) {
-	//							res.view('vistas/Error', {
-	//								error: {
-	//									desripcion: "Hubo un problema cargando los Usuarios",
-	//									rawError: errorIndefinido,
-	//									url: "/ListarUsuarios"
-	//								}
-	//							});
-	//						}
-	//
-	//						res.view('vistas/Usuario/ListarUsuarios', {
-	//							usuarios: usuariosEncontrados
-	//						});
-	//					})
-	//			})
-	//
-	//		} else {
-	//			return res.view('vistas/Error', {
-	//				error: {
-	//					desripcion: "Necesitamos el ID para borrar al Usuario",
-	//					rawError: "No envia ID",
-	//					url: "/ListarUsuarios"
-	//				}
-	//			});
-	//		}
-	//	},
-	//
-	//	editarUsuario: function (req, res) {
-	//		var parametros = req.allParams();
-	//
-	//		if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
-	//
-	//			var usuarioEditar = {
-	//				nombres: parametros.nombres,
-	//				apellidos: parametros.apellidos,
-	//				correo: parametros.correo,
-	//				password: parametros.password
-	//			}
-	//
-	//			if (usuarioEditar.nombres = "") {
-	//				delete usuarioEditar.nombres;
-	//			}
-	//			if (usuarioEditar.apellidos = "") {
-	//				delete usuarioEditar.apellidos;
-	//			}
-	//			if (usuarioEditar.correo = "") {
-	//				delete usuarioEditar.correo;
-	//			}
-	//			if (usuarioEditar.password = "") {
-	//				delete usuarioEditar.password;
-	//			}
-	//			
-	//
-	//
-	//			Usuario.update({
-	//				id: parametros.idUsuario
-	//			}, usuarioEditar).exec(function (errorInesperado, UsuarioRemovido) {
-	//				if (errorInesperado) {
-	//					return res.view('vistas/Error', {
-	//						error: {
-	//							desripcion: "Tuvimos un Error Inesperado",
-	//							rawError: errorInesperado,
-	//							url: "/ListarUsuarios"
-	//						}
-	//					});
-	//				}
-	//				Usuario.find()
-	//					.exec(function (errorIndefinido, usuariosEncontrados) {
-	//
-	//						if (errorIndefinido) {
-	//							res.view('vistas/Error', {
-	//								error: {
-	//									desripcion: "Hubo un problema cargando los Usuarios",
-	//									rawError: errorIndefinido,
-	//									url: "/ListarUsuarios"
-	//								}
-	//							});
-	//						}
-	//
-	//						res.view('vistas/Usuario/ListarUsuarios', {
-	//							usuarios: usuariosEncontrados
-	//						});
-	//					})
-	//			})
-	//
-	//		} else {
-	//			return res.view('vistas/Error', {
-	//				error: {
-	//					desripcion: "Necesitamos que envies el ID y nombres, apellidos o correo",
-	//					rawError: "No envia ID",
-	//					url: "/ListarUsuarios"
-	//				}
-	//			});
-	//		}
-	//
-	//		Usuario.find().exec(function (errorIndefinido, usuariosEncontrados) {
-	//			if (errorIndefinido) {
-	//				return res.view('vistas/Error', {
-	//					error: {
-	//						desripcion: "Hubo un error cargando los usuarios",
-	//						rawError: errorIndefinido,
-	//						url: "/ListarUsuarios"
-	//					}
-	//				});
-	//			}
-	//			res.view("vistas/Usuario/editarUsuario", {
-	//				usuarios: usuariosEncontrados
-	//			})
-	//		})
-	//
-	//	}
 
 
 };
