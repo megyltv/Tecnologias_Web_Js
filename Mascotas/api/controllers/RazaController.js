@@ -111,72 +111,64 @@ module.exports = {
 	editarRaza: function (req, res) {
 		var parametros = req.allParams();
 
-		if (parametros.idRaza && parametros.nombre) {
+        if (parametros.idRaza && (parametros.nombre)) {
+            
+            var razaAEditar = {
+                nombre: parametros.nombre
+            }
 
-			var razaEditar = {
-				nombre: parametros.nombre,
+            if (razaAEditar.nombre == "") {
+                delete razaAEditar.nombre
 			}
 
-			if (razaEditar.nombre = "") {
-				delete razaEditar.nombre;
-			}			
+            Raza.update({
+                    id: parametros.idRaza
+                }, razaAEditar)
+                .exec(function (errorInesperado, RazaRemovido) {
+                    if (errorInesperado) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                desripcion: "Tuvimos un Error Inesperado",
+                                rawError: errorInesperado,
+                                url: "/ListarRazas"
+                            }
+                        });
+                    }
+                
+                    Raza.find()
+                        .exec(function (errorIndefinido, razasEncontrados) {
 
+                            if (errorIndefinido) {
+                                res.view('vistas/Error', {
+                                    error: {
+                                        desripcion: "Hubo un problema cargando los Usuarios",
+                                        rawError: errorIndefinido,
+                                        url: "/ListarRazas"
+                                    }
+                                });
+                            }
 
-			Raza.update({
-				id: parametros.idRaza
-			}, razaEditar).exec(function (errorInesperado, RazaRemovido) {
-				if (errorInesperado) {
-					return res.view('vistas/Error', {
-						error: {
-							desripcion: "Tuvimos un Error Inesperado",
-							rawError: errorInesperado,
-							url: "/ListarRazas"
-						}
-					});
-				}
-				Raza.find()
-					.exec(function (errorIndefinido, razasEncontrados) {
+                            res.view('vistas/Raza/ListarRazas', {
+                                razas: razasEncontrados
+                            });
+                        })
 
-						if (errorIndefinido) {
-							res.view('vistas/Error', {
-								error: {
-									desripcion: "Hubo un problema cargando las Razas",
-									rawError: errorIndefinido,
-									url: "/ListarRazas"
-								}
-							});
-						}
+                })
+            
+            
+            
+            
+            
 
-						res.view('vistas/Raza/ListarRazas', {
-							razas: razasEncontrados
-						});
-					})
-			})
-
-		} else {
-			return res.view('vistas/Error', {
-				error: {
-					desripcion: "Necesitamos que envies el ID y nombre",
-					rawError: "No envia ID",
-					url: "/ListarRazas"
-				}
-			});
-		}
-
-		Raza.find().exec(function (errorIndefinido, razasEncontrados) {
-			if (errorIndefinido) {
-				return res.view('vistas/Error', {
-					error: {
-						desripcion: "Hubo un error cargando las razas",
-						rawError: errorIndefinido,
-						url: "/ListarRazas"
-					}
-				});
-			}
-			res.view("vistas/Raza/editarRaza", {
-				razas: razasEncontrados
-			})
-		})
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Necesitamos que envies el ID y el nombre, apellido o correo",
+                    rawError: "No envia Parametros",
+                    url: "/ListarRazas"
+                }
+            });
+        }
 	}
 
 

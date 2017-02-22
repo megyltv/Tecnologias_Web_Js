@@ -39,7 +39,7 @@ module.exports.policies = {
 	 home : true,
 	 error : true,
 	 listarUsuarios : ['autenticado'],
-	 crearUsuario : ['autenticado'],
+	 crearUsuario : true,
 	 editarUsuario : ['autenticado','esElMismoUsuario'],
 	 }
 };

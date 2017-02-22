@@ -38,7 +38,8 @@ module.exports = {
                 }
                 if(UsuarioEncontrado){
                      return res.view("vistas/Usuario/editarUsuario",{
-                         usuarioAEditar:UsuarioEncontrado
+                         usuarioAEditar:UsuarioEncontrado,
+                         inicioSesion:true
                      });
                 }else{
                     return res.view('vistas/Error', {
@@ -128,13 +129,14 @@ module.exports = {
                 }
                 if(RazaEncontrado){
                      return res.view("vistas/Raza/editarRaza",{
-                         razaAEditar:RazaEncontrado
+                         razaAEditar:RazaEncontrado,
+                         
                      });
                 }else{
                     return res.view('vistas/Error', {
                         error: {
-                            desripcion: "La raza con id: "+parametros.id+" no existe.",
-                            rawError: "No existe la raza",
+                            desripcion: "El usuario con id: "+parametros.id+" no existe.",
+                            rawError: "No existe el usuario",
                             url: "/ListarRazas"
                         }
                     });
