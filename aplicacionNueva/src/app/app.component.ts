@@ -38,6 +38,8 @@ nuevatienda:any={};
   }
 
   crearTienda(formulario){
+    // this.http
+    //   .post("localhost:1337/Tienda")
     console.log(formulario)
   }
 }
