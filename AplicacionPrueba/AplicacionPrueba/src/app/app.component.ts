@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Response, Http} from "@angular/http";
 import {MasterURLService} from "./services/master-url.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
 
@@ -21,6 +22,10 @@ export class AppComponent implements OnInit {
   error: string = "No hay errores";
 
   nuevaTienda:any={};
+
+  disabledButtons={
+    NuevaTiendaFormSubmitButton:false
+  }
 
 
 
@@ -49,7 +54,8 @@ export class AppComponent implements OnInit {
     console.log("Hizo focus");
   }
 
-  crearTienda(formulario){
+  crearTienda(formulario:NgForm){
+    this.disabledButtons.NuevaTiendaFormSubmitButton=true;
     console.log(formulario);
     this._http.post(this._masterURL.url+"Tienda",{
       nombre:formulario.value.nombre
@@ -57,8 +63,10 @@ export class AppComponent implements OnInit {
       (res)=>{
         console.log("No hubo Errores",res);
         this.nuevaTienda={};
+        this.disabledButtons.NuevaTiendaFormSubmitButton=false;
       },
       (err)=>{
+        this.disabledButtons.NuevaTiendaFormSubmitButton=false;
         console.log("Ocurrio un error",err);
       },
       ()=>{
