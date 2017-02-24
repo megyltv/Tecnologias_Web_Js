@@ -42,6 +42,7 @@
     <div class="col-sm-3" *ngFor="let tienda of tiendas">
       <h3>{{tienda.nombre}}</h3>
       <p>{{tienda.id}}</p>
+      <button class="btn btn-danger" (click)="borrarTienda(tienda.id)">Borrar</button>
     </div>
   </div>
 </div>
