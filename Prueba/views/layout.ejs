@@ -6,6 +6,12 @@
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+    <!-- JQuery y Bootstrap js -->
+    <script src="/bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
 
     <!--
         Stylesheets and Preprocessors
@@ -29,12 +35,40 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/estilos.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
-    <%- body %>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span>MENU</span>
+          </button>
+          <a class="navbar-brand" href="#">Materia-Grupo</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/Inicio">Inicio</a></li>
+            <li><a href="/ListarMaterias">Lista de Materias</a></li>
+            <li><a href="/CrearMateria">Crear Materia</a></li>
+            <li><a href="/ListarGrupos">Lista de Grupos</a></li>
+            <li><a href="/CrearGrupo">Crear Grupo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <%- body %>
+    </div>
+
+
+    <div class="navbar navbar-fixed-bottom">
+      Desarrolado por Escuela Politecnica Nacional
+    </div>
 
 
 
