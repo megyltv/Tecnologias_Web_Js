@@ -2,145 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7aa1ff7-3fcb-4192-874e-57f6f6117728" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Tecnologias_Web_Js.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/.sailsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/controllers/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/controllers/TiendaController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/models/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/models/Tienda.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/policies/sessionAuth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/badRequest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/created.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/forbidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/notFound.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/ok.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/responses/serverError.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/api/services/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/js/jquery-3.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/images/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/js/dependencies/sails.io.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/styles/importer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/assets/templates/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/blueprints.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/connections.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/cors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/csrf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/env/development.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/env/production.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/globals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/i18n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/locales/_README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/locales/de.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/locales/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/locales/es.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/locales/fr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/models.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/policies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/session.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/sockets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/config/views.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/clean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/coffee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/cssmin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/jst.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/sails-linker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/uglify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/config/watch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/pipeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/buildProd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/compileAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/linkAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/linkAssetsBuild.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/linkAssetsBuildProd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/tasks/register/syncAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/views/403.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/views/404.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/views/500.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/views/homepage.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tiendas/views/layout.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/e2e/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/assets/jquery-3.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/src/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/aplicacionNueva/tslint.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionPrueba/Tiendas/views/layout.ejs" afterPath="$PROJECT_DIR$/AplicacionPrueba/Tiendas/views/layout.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -256,6 +119,10 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/node_modules" />
+    <handled-path value="$PROJECT_DIR$/AplicacionPrueba/Tiendas/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -401,12 +268,12 @@
       <workItem from="1487879453884" duration="441000" />
       <workItem from="1487882852761" duration="35000" />
       <workItem from="1487882908879" duration="7985000" />
-      <workItem from="1487946669312" duration="106000" />
+      <workItem from="1487946669312" duration="384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13867000" />
+    <option name="totallyTimeSpent" value="14145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
