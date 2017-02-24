@@ -3,35 +3,46 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <pre>
+      <pre class="animated fadeInDown">
         {{nuevaTienda|json}}
       </pre>
     </div>
-  </div>
-  <div class="col-sm-6">
-    <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
-      <div class="form-group">
-        <label>Tienda</label>
-        <!--Directiva.- da una funcionalidad diferente al atributo-->
-        <span class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">Ingrese un nombre minimo con 4 caracteres</span>
-        <input required
-               minlength="4"
-               type="text"
-               class="form-control"
-               placeholder="Digite un nombre de tienda como: Adidas"
-               name="nombre"
-               [(ngModel)]="nuevaTienda.nombre"
-               #nombre="ngModel"
-               #nombreElm>
+    <div class="col-sm-6">
+      <form class="animated bounceIn" (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+        <div class="form-group">
+          <label>Tienda</label>
+          <div class="animated slideInUp" [hidden]="!nombre.errors">
+            <!--Directiva.- da una funcionalidad diferente al atributo-->
+            <span class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">Ingrese un nombre minimo con 4 caracteres</span>
+          </div>
 
-      </div>
-      <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
-              class="btn btn-block btn-success">Crear
-      </button>
-    </form>
-  </div>
-  <div class="col-sm-6"><h1>{{nuevaTienda.nombre}}</h1>
-  </div>
+          <input required
+                 minlength="4"
+                 type="text"
+                 class="form-control"
+                 placeholder="Digite un nombre de tienda como: Adidas"
+                 name="nombre"
+                 [(ngModel)]="nuevaTienda.nombre"
+                 #nombre="ngModel"
+                 #nombreElm>
 
+        </div>
+        <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-6"><h1>{{nuevaTienda.nombre}}</h1>
+    </div>
+    <!--<div class="col-sm-12">-->
+    <!--&lt;!&ndash;<pre>{{tiendas | json}}</pre>&ndash;&gt;-->
+    <!--</div>-->
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let tienda of tiendas">
+      <h3>{{tienda.nombre}}</h3>
+      <p>{{tienda.id}}</p>
+    </div>
+  </div>
 </div>
 
