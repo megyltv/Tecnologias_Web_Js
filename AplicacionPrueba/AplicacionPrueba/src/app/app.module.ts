@@ -5,7 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-//Decorator
+// DECORATOR
+// @Decorator({asd:"asd"})
+// @Primary({})
+// @Politecnica({asda:"asdasd"})
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,4 +22,8 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
+
