@@ -1,14 +1,16 @@
 <h2>Crear una Materia</h2>
 <form action="/Materia/CrearMateria" method="post">
 
-<div class="form-group">
-		<label for="exampleInputEmail1">Nombre</label>
-		<input type="text" class="form-control" placeholder="Ingrese el nombre de la materia" name="nombreMateria">
+
+<div class="col-sm-7">
+	<div class="form-group">
+		<label for="exampleInputEmail1">Nombre del Grupo</label>
+		<input type="text" class="form-control" placeholder="Ingrese el nombre del grupo" name="nombreGrupo">
 	</div>
 	
 	<div class="form-group">
-		<label for="exampleInputEmail1">Tópico</label>
-		<input type="text" class="form-control" placeholder="Ingrese el tópico de la materia" name="topicoMateria">
+		<label for="exampleInputEmail1">Numero maximo de estudiantes</label>
+		<input type="text" class="form-control" placeholder="Ingrese el numero maximo de estudiantes" name="numeroMaximoEstudiante">
 	</div>
 	
 	<div class="form-group">
@@ -16,6 +18,11 @@
 		<input type="date" class="form-control" name="fechaCreacion" placeholder="Ingrese fecha de creacion">
 	</div>
 	
-	
 	<button type="submit" class="btn btn-success">Crear Materia =)</button>
+</div>
+
+
+	
+	
+	
 </form>

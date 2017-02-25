@@ -12,10 +12,11 @@
 
 
 <% for(var i=0; i<materias.length;i++) {%>
-	<div class="row ma-margen-top-bottom">
-		<section>
+	<div class="row ma-margen-top-bottom ma-border">
+
 		<div class="col-sm-4 text-center ma-padding-top-bottom">
 			<h3> <%= materias[i].nombreMateria%></h3>
+			<div class="row"><a href="/ListarGrupos">Listar Grupos</a></div>
 		</div>
 
 		<div class="col-sm-5 text-center" style="margin-top:30px">
@@ -32,7 +33,11 @@
 		<div class="col-sm-1 ma-padding-top-bottom">
 			<a href="/Materia/borrarMateria?id=<%= materias[i].id%>" class="btn btn-danger btn-block">X</a>
 			<a href="/EditarMateria?id=<%= materias[i].id%>" class="btn btn-info btn-block">Edit</a>
+			
 		</div>
-		</section>
+		<br>
+		
+
 	</div>
+	
 	<% }%>

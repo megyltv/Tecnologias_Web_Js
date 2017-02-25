@@ -92,7 +92,27 @@ module.exports = {
 	},
 	
 	listarGrupos:function(req,res){
-		
+		var parametros = req.allParams();
+		Grupo.find({
+				id: parametros.id
+			})
+			.exec(function (errorIndefinido, gruposEncontrados) {
+
+				if (errorIndefinido) {
+					return res.view('vistas/Error', {
+						error: {
+							descripcion: "Hubo un problema listando los grupos",
+							rawError: errorIndefinido,
+							url: "/ListarGrupos"
+						}
+					});
+				}
+
+				res.view('vistas/Grupo/listarGrupos', {
+					grupos: gruposEncontrados
+				})
+
+			})
 	},
 	
 	editarGrupo: function (req,res){

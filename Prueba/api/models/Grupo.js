@@ -15,7 +15,11 @@ module.exports = {
       numeroMaximoEstudiante:{
           type:'integer',
           required:true
-      }
+      },
+	  idMateria:{
+		  model:'Materia',
+		  required:true
+	  }
   }
 };
 

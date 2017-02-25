@@ -19,7 +19,11 @@ module.exports = {
       fechaCreacion:{
           type:'date',
           required:true
-      }
+      },
+	  grupos:{
+		  collection:'Grupo',
+		  via:'idMateria'
+	  }
 
   }
 };

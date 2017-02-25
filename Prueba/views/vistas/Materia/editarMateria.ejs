@@ -1,7 +1,8 @@
 <h2>Editar Materia - <%= materiaAEditar.nombreMateria%></h2>
 <form action="/Materia/EditarMateria" method="post">
 
-<div class="form-group">
+<div class="col-sm-7">
+	<div class="form-group">
 		<label for="exampleInputEmail1">Nombre</label>
 		<input type="text" class="form-control" placeholder="Ingrese el nombre de la materia" name="nombreMateria" value="<%=materiaAEditar.nombreMateria%>">
 	</div>
@@ -20,4 +21,10 @@
 	
 	
 	<button type="submit" class="btn btn-success">Editar Materia =)</button>
+	<a href="/ListarMaterias" class="btn btn-warning">Cancelar</a>
+	
+</div>
+
+
+	
 </form>
