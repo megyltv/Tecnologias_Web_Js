@@ -16,7 +16,8 @@
 
 		<div class="col-sm-4 text-center ma-padding-top-bottom">
 			<h3> <%= materias[i].nombreMateria%></h3>
-			<div class="row"><a href="/ListarGrupos">Listar Grupos</a></div>
+			<input type="hidden" name="idMateria" value="<%= materias[i].idMateria %>">
+<!--			<div class="row"><a href="/ListarGrupos?id=<%= materias[i].id%>">Listar Grupos</a></div>-->
 		</div>
 
 		<div class="col-sm-5 text-center" style="margin-top:30px">

@@ -11,21 +11,24 @@ module.exports = {
 		return res.view('vistas/home', {})
 
 	},
+
+	//	MATERIA 
+
 	crearMateria: function (req, res) {
 
 		return res.view('vistas/Materia/crearMateria')
 
 	},
-	
-	listarMaterias:function(req,res){
-		Materia.find()
-			.exec(function (errorIndefinido, materiasEncontradas) {
 
-				if (errorIndefinido) {
+	listarMaterias: function (req, res) {
+		Materia.find()
+			.exec(function (error, materiasEncontradas) {
+
+				if (error) {
 					return res.view('vistas/Error', {
 						error: {
 							descripcion: "Hubo un problema listando las materias",
-							rawError: errorIndefinido,
+							rawError: error,
 							url: "/ListarMaterias"
 						}
 					});
@@ -37,21 +40,21 @@ module.exports = {
 
 			})
 	},
-	
-	editarMateria: function(req,res){
-	
+
+	editarMateria: function (req, res) {
+
 		var parametros = req.allParams();
 
 		if (parametros.id) {
 
 			Materia.findOne({
 				id: parametros.id
-			}).exec(function (errorInesperado, MateriaEncontrada) {
-				if (errorInesperado) {
+			}).exec(function (error, MateriaEncontrada) {
+				if (error) {
 					return res.view('vistas/Error', {
 						error: {
 							desripcion: "Error Inesperado",
-							rawError: errorInesperado,
+							rawError: error,
 							url: "/ListarMaterias"
 						}
 					});
@@ -59,7 +62,7 @@ module.exports = {
 				if (MateriaEncontrada) {
 					return res.view("vistas/Materia/editarMateria", {
 						materiaAEditar: MateriaEncontrada,
-						
+
 					});
 				} else {
 					return res.view('vistas/Error', {
@@ -83,26 +86,29 @@ module.exports = {
 
 		}
 	},
-	
-	
-	crearGrupo: function (req, res) {
 
-		return res.view('vistas/Grupo/crearGrupo')
+	//	GRUPO
+
+
+	crearGrupo: function (req, res) {
+		Materia.find().exec(function (error, materiasEncontradas) {
+			if (error) return res.serverError();
+			return res.view('vistas/Grupo/crearGrupo', {
+				materias: materiasEncontradas
+			});
+		});
 
 	},
-	
-	listarGrupos:function(req,res){
-		var parametros = req.allParams();
-		Grupo.find({
-				id: parametros.id
-			})
-			.exec(function (errorIndefinido, gruposEncontrados) {
 
-				if (errorIndefinido) {
+	listarGrupos: function (req, res) {
+		Grupo.find()
+			.exec(function (error, gruposEncontrados) {
+
+				if (error) {
 					return res.view('vistas/Error', {
 						error: {
-							descripcion: "Hubo un problema listando los grupos",
-							rawError: errorIndefinido,
+							descripcion: "Hubo un problema listando las materias",
+							rawError: error,
 							url: "/ListarGrupos"
 						}
 					});
@@ -114,12 +120,59 @@ module.exports = {
 
 			})
 	},
-	
-	editarGrupo: function (req,res){
-		
+
+	editarGrupo: function (req, res) {
+
+		var parametros = req.allParams();
+
+		if (parametros.id) {
+			Grupo.findOne({
+				id: parametros.id
+			}).exec(function (error, grupoEncontrado) {
+				if (error) {
+					return res.view('vistas/Error', {
+						error: {
+							descripcion: 'Fallo al buscar el grupo',
+							rawError: error,
+							url: '/CrearGrupo'
+						}
+					});
+				}
+
+
+				Materia.find().exec(function (error, materiasEncontradas) {
+					if (error) {
+						return res.view('vistas/Error', {
+							title: 'Error',
+							error: {
+								descripcion: 'Fallo al buscar la materia',
+								rawError: error,
+								url: '/CrearMateria'
+							}
+						});
+					}
+
+					return res.view('vistas/Grupo/editarGrupo', {
+						grupoAEditar: grupoEncontrado,
+						materias: materiasEncontradas
+					})
+				});
+
+			});
+
+		} else {
+			return res.view('error', {
+				error: {
+					desripcion: "No ha enviado el parametro ID",
+					rawError: "Faltan Parametros",
+					url: "/ListarGrupos"
+				}
+			});
+		}
+
 	},
-	
-	error: function(req,res){
+
+	error: function (req, res) {
 		return res.view('vistas/Error', {
 			error: {
 				descripcion: "Usted esta por error en esta Ruta, dirijase a Inicio",
@@ -128,6 +181,5 @@ module.exports = {
 			}
 		})
 	}
-	
-};
 
+};

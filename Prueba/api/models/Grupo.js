@@ -12,7 +12,7 @@ module.exports = {
           type:'string',
           required:true
       },
-      numeroMaximoEstudiante:{
+	  numeroMaximoEstudiante:{
           type:'integer',
           required:true
       },

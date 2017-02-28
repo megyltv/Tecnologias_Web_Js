@@ -19,13 +19,13 @@ module.exports = {
 					fechaCreacion: parametros.fechaCreacion
 				}
 
-				Materia.create(materiaCrear).exec(function (err, materiaCreada) {
+				Materia.create(materiaCrear).exec(function (error, materiaCreada) {
 
-					if (err) {
+					if (error) {
 						return res.view('vistas/Error', {
 							error: {
 								desripcion: "Falla al crear nueva materia",
-								rawError: err,
+								rawError: error,
 								url: "/CrearMateria"
 							}
 
@@ -33,13 +33,13 @@ module.exports = {
 					}
 
 					Materia.find()
-						.exec(function (errorIndefinido, materiasEncontradas) {
+						.exec(function (error, materiasEncontradas) {
 
-							if (errorIndefinido) {
+							if (error) {
 								res.view('vistas/Error', {
 									error: {
 										desripcion: "Hubo un problema listando las materias",
-										rawError: errorIndefinido,
+										rawError: error,
 										url: "/ListarMaterias"
 									}
 								});
@@ -88,24 +88,24 @@ module.exports = {
 
 			Materia.destroy({
 				id: parametros.id
-			}).exec(function (errorInesperado, MateriaRemovida) {
-				if (errorInesperado) {
+			}).exec(function (error, MateriaRemovida) {
+				if (error) {
 					return res.view('vistas/Error', {
 						error: {
 							desripcion: "Tuvimos un Error Inesperado",
-							rawError: errorInesperado,
+							rawError: error,
 							url: "/ListarMaterias"
 						}
 					});
 				}
 				Materia.find()
-					.exec(function (errorIndefinido, materiasEncontradas) {
+					.exec(function (error, materiasEncontradas) {
 
-						if (errorIndefinido) {
+						if (error) {
 							res.view('vistas/Error', {
 								error: {
 									desripcion: "Hubo un problema listando las materias",
-									rawError: errorIndefinido,
+									rawError: error,
 									url: "/ListarMaterias"
 								}
 							});
@@ -154,25 +154,25 @@ module.exports = {
             Materia.update({
                     id: parametros.idMateria
                 }, materiaAEditar)
-                .exec(function (errorInesperado, MateriaRemovida) {
-                    if (errorInesperado) {
+                .exec(function (error, MateriaRemovida) {
+                    if (error) {
                         return res.view('vistas/Error', {
                             error: {
                                 desripcion: "Tuvimos un Error Inesperado",
-                                rawError: errorInesperado,
+                                rawError: error,
                                 url: "/ListarMaterias"
                             }
                         });
                     }
                 
                     Materia.find()
-                        .exec(function (errorIndefinido, materiasEncontradas) {
+                        .exec(function (error, materiasEncontradas) {
 
-                            if (errorIndefinido) {
+                            if (error) {
                                 res.view('vistas/Error', {
                                     error: {
                                         desripcion: "Hubo un problema listando las Materias",
-                                        rawError: errorIndefinido,
+                                        rawError: error,
                                         url: "/ListarMaterias"
                                     }
                                 });

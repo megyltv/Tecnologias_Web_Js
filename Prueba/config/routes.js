@@ -40,6 +40,7 @@ module.exports.routes = {
 	
 	'get /CrearGrupo': 'RutasController.crearGrupo',
 	'get /ListarGrupos': 'RutasController.listarGrupos',
+		
 	'get /EditarGrupo': 'RutasController.editarGrupo',
 	
 	
