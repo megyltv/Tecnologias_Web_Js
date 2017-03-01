@@ -10,6 +10,7 @@ import {NgForm} from "@angular/forms";
 })
 export class MateriaComponent implements OnInit {
   title="Materias";
+  subtitle="Lista de Materias";
   nuevaMateria={};
   materias=[];
   disabledButtons={
@@ -50,6 +51,34 @@ export class MateriaComponent implements OnInit {
       },
       (err)=>{
         console.log(err);
+      }
+    );
+  }
+
+  borrarMateria(id:number){
+    this._http.delete(this._masterURL.url+"Materia/"+id).subscribe(
+      (res)=>{
+        let tiendaBorrada=res.json();
+        this.materias=this.materias.filter(value=>tiendaBorrada.id!=value.id);
+      },
+      (err)=>{
+        console.log(err);
+      }
+    );
+  }
+  actualizarMateria(materia:any, formulario:NgForm){
+    let parametros={
+      nombreMateria:materia.nombreMateria,
+      topicoMateria:materia.value.topicoMateria,
+      fechaCreacion:materia.value.fechaCreacion
+    };
+    this._http.put(this._masterURL.url+"Materia/"+materia.id,parametros).subscribe(
+      (res:Response)=>{
+        materia.formularioCerrado=!materia.formularioCerrado;
+        console.log("Respuesta:",res.json());
+      },
+      (err) => {
+        console.log("Error: ", err);
       }
     );
   }

@@ -1,0 +1,83 @@
+{
+  "data": {
+    "grupo": [
+      {
+        "nombreGrupo": "Progra gr1",
+        "numeroMaximoEstudiante": 13,
+        "idMateria": 1,
+        "createdAt": "2017-03-01T17:56:23.821Z",
+        "updatedAt": "2017-03-01T17:56:23.821Z",
+        "id": 1
+      }
+    ],
+    "materia": [
+      {
+        "nombreMateria": "Progra",
+        "topicoMateria": "Progra",
+        "fechaCreacion": "2017-03-09T00:00:00.000Z",
+        "createdAt": "2017-03-01T17:56:05.321Z",
+        "updatedAt": "2017-03-01T17:56:05.321Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "grupo": {
+      "nombreGrupo": {
+        "type": "string"
+      },
+      "numeroMaximoEstudiante": {
+        "type": "integer"
+      },
+      "idMateria": {
+        "type": "integer",
+        "model": "materia",
+        "foreignKey": true,
+        "alias": "idMateria"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "materia": {
+      "nombreMateria": {
+        "type": "string"
+      },
+      "topicoMateria": {
+        "type": "string"
+      },
+      "fechaCreacion": {
+        "type": "date"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "grupo": {
+      "id": 1
+    },
+    "materia": {
+      "id": 1
+    }
+  }
+}
