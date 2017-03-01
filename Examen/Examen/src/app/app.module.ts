@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MateriaComponent } from './materia/materia.component';
 import { GrupoComponent } from './grupo/grupo.component';
+import {routing} from "./app.routes";
+import {MasterURLService} from "./services/master-url.service";
 
 @NgModule({
   declarations: [
@@ -18,9 +20,12 @@ import { GrupoComponent } from './grupo/grupo.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    MasterURLService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

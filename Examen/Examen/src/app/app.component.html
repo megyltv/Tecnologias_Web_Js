@@ -4,14 +4,19 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span>MENU</span>
       </button>
-      <a class="navbar-brand" href="#">Materia-Grupo</a>
+      <a class="navbar-brand" [routerLink]="['/home']">Materia-Grupo</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/home">Inicio</a></li>
-        <li><a href="/materia">Materia</a></li>
+        <li><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/materia']">Materia</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<div class="navbar navbar-fixed-bottom">
+  Desarrolado por Escuela Politecnica Nacional
+</div>
+<router-outlet></router-outlet>

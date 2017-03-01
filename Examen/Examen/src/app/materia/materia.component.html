@@ -1,3 +1,32 @@
-<p>
-  materia works!
-</p>
+<h1>{{title}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <pre >
+        {{nuevaMateria|json}}
+      </pre>
+    </div>
+    <div class="col-sm-6">
+      <form (ngSubmit)="crearMateria(NuevaMateriaForm)" #NuevaMateriaForm="ngForm">
+        <div class="form-group">
+          <label>Nombre Materia</label>
+          <input required type="text" class="form-control" placeholder="Ingrese nombre de la materia" name="nombreMateria" [(ngModel)]="nuevaMateria.nombreMateria" #nombreMateria="ngModel" #nombreElm>
+        </div>
+        <div class="form-group">
+          <label>Topico Materia</label>
+          <input required type="text" class="form-control" placeholder="Ingrese topico de la materia" name="topicoMateria" [(ngModel)]="nuevaMateria.topicoMateria" #topicoMateria="ngModel" #nombreElm>
+        </div>
+        <div class="form-group">
+          <label>Topico Materia</label>
+          <input required type="date" class="form-control" placeholder="Ingrese fecha de creacion" name="fechaCreacion" [(ngModel)]="nuevaMateria.fechaCreacion" #fechaCreacion="ngModel" #nombreElm>
+        </div>
+        <button [disabled]="disabledButtons.NuevaMateriaFormSubmitButton||!NuevaMateriaForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear Materia
+        </button>
+
+      </form>
+    </div>
+    <div class="col-sm-6"><h1>{{nuevaMateria.nombreMateria}}</h1>
+    </div>
+  </div>
+</div>
