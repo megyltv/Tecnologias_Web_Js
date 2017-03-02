@@ -9,7 +9,7 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./materia.component.css']
 })
 export class MateriaComponent implements OnInit {
-  title="Materias";
+  title="Crear Materia";
   subtitle="Lista de Materias";
   nuevaMateria={};
   materias=[];
@@ -58,8 +58,8 @@ export class MateriaComponent implements OnInit {
   borrarMateria(id:number){
     this._http.delete(this._masterURL.url+"Materia/"+id).subscribe(
       (res)=>{
-        let tiendaBorrada=res.json();
-        this.materias=this.materias.filter(value=>tiendaBorrada.id!=value.id);
+        let materiaBorrada=res.json();
+        this.materias=this.materias.filter(value=>materiaBorrada.id!=value.id);
       },
       (err)=>{
         console.log(err);
