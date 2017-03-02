@@ -15,6 +15,9 @@ export class GrupoComponent implements OnInit {
   private _parametros:any;
   grupos=[];
   nuevoGrupo={};
+  disabledButtons={
+    NuevoGrupoFormSubmitButton:false
+  };
 
   constructor(private _ActivateRoute:ActivatedRoute, private _http:Http, private _masterURL:MasterURLService) { }
 
@@ -36,6 +39,7 @@ export class GrupoComponent implements OnInit {
   }
 
   crearGrupo(formulario:NgForm){
+    this.disabledButtons.NuevoGrupoFormSubmitButton=true;
     let grupo={
       nombreGrupo:formulario.value.nombreGrupo,
       numeroMaximoEstudiante:formulario.value.numeroMaximoEstudiante,
@@ -45,6 +49,7 @@ export class GrupoComponent implements OnInit {
       (res:Response)=>{
         this.grupos.push(res.json());
         this.nuevoGrupo={};
+        this.disabledButtons.NuevoGrupoFormSubmitButton=false;
       },
       (err)=>{
         console.log(err);
@@ -64,13 +69,13 @@ export class GrupoComponent implements OnInit {
     );
   }
 
-  actualizarGrupo(grupo:any, formulario:NgForm){
+  actualizarGrupo(grupo:any, id:number){
     let parametros={
       nombreGrupo:grupo.nombreGrupo,
-      numeroMaximoEstudiante:grupo.numeroMaximoEstudiante,
-      idMateria:grupo.idMateria
+      numeroMaximoEstudiante:grupo.numeroMaximoEstudiante
+
     };
-    this._http.put(this._masterURL.url+"Grupo/"+grupo.id,parametros).subscribe(
+    this._http.put(this._masterURL.url+"Grupo/"+id,parametros).subscribe(
       (res:Response)=>{
         grupo.formularioCerrado=!grupo.formularioCerrado;
         console.log("Respuesta:",res.json());

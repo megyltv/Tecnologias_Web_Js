@@ -69,8 +69,8 @@ export class MateriaComponent implements OnInit {
   actualizarMateria(materia:any, formulario:NgForm){
     let parametros={
       nombreMateria:materia.nombreMateria,
-      topicoMateria:materia.value.topicoMateria,
-      fechaCreacion:materia.value.fechaCreacion
+      topicoMateria:materia.topicoMateria,
+      fechaCreacion:materia.fechaCreacion
     };
     this._http.put(this._masterURL.url+"Materia/"+materia.id,parametros).subscribe(
       (res:Response)=>{
